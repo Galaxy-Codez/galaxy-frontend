@@ -1,0 +1,167 @@
+import { Menu } from "@/types/menu";
+
+const menuData: Menu[] = [
+  {
+    id: 1,
+    title: "Services",
+    url: "/services",
+    newTab: false,
+    megamenu: true,
+    submenu: [
+      {
+        id: 1,
+        title: "Hire Team",
+        desc: "Hire Dedicated Team",
+        path: "/hire-dedicated-team",
+        newTab: false,
+      },
+      {
+        id: 2,
+        title: "Blockchain",
+        desc: "DApps & NFT Marketplace",
+        path: "/blockchain-development-services",
+        newTab: false,
+      },
+      {
+        id: 3,
+        title: "Web Apps",
+        desc: "Building Resilient Web Apps",
+        path: "/web-applications-development-services",
+        newTab: false,
+      },
+      {
+        id: 4,
+        title: "Mobile Apps",
+        desc: "IOS, Android and Wearables Apps",
+        path: "/mobile-apps-development-services",
+        newTab: false,
+      },
+      {
+        id: 5,
+        title: "UI/UX Design",
+        desc: "Aesthetically Pleasing Interface",
+        path: "/ux-ui-design-services",
+        newTab: false,
+      },
+      {
+        id: 6,
+        title: "Wordpress",
+        desc: "Enpowering Websites with Wordpress",
+        path: "/wordpress-development-services",
+        newTab: false,
+      },
+      {
+        id: 7,
+        title: "Shopify",
+        desc: "eCommerce Store Development",
+        path: "/shopify-development-services",
+        newTab: false,
+      },
+      {
+        id: 8,
+        title: "MVP",
+        desc: "MVP for Startup",
+        path: "/mvp-development-services",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Work",
+    url: "/work",
+    newTab: false,
+    megamenu: true,
+    submenu: [
+      {
+        id: 2,
+        title: "Blockchain",
+        desc: "Collection of Blockchain Apps",
+        path: "/blockchain-portfolio",
+        newTab: false,
+      },
+      {
+        id: 4,
+        title: "Mobile Apps",
+        desc: "IOS, Android and Wearables Apps",
+        path: "/mobile-apps",
+        newTab: false,
+      },
+      {
+        id: 3,
+        title: "Web Apps",
+        desc: "Showcasing our Web App Expertise",
+        path: "/web-apps-portfolio",
+        newTab: false,
+      },
+      {
+        id: 6,
+        title: "Wordpress",
+        desc: "eCommerce & Custom Development",
+        path: "/wordpress-shopify-portfolio",
+        newTab: false,
+      },
+      {
+        id: 5,
+        title: "UI/UX Design",
+        desc: "Seamless Digital Experiences",
+        path: "/ux-ui-portfolio",
+        newTab: false,
+      },
+      {
+        id: 8,
+        title: "MVP",
+        desc: "Winning MVP Portfolio",
+        path: "/mvp-portfolio",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "About Us",
+    path: "/about-us",
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: "Insights",
+    url: "/#",
+    newTab: false,
+    submenu: [
+      {
+        id: 1,
+        title: "Blogs",
+        path: "/blogs",
+        newTab: false,
+      },
+      {
+        id: 2,
+        title: "Events",
+        path: "/events",
+        newTab: false,
+      },
+      {
+        id: 3,
+        title: "Newsletters",
+        path: "/newsletters",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Careers",
+    url: "/careers",
+    newTab: false,
+    submenu: [
+      {
+        id: 1,
+        title: "Job openings",
+        path: "/job-openings",
+        newTab: false,
+      },
+    ],
+  },
+];
+export default menuData;

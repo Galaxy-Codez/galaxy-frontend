@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "development",
+    "production"
+  ],
+  "hints": {
+    "no-inline-styles": "off",
+    "button-type": "off"
+  }
+}

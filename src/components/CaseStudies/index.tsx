@@ -1,0 +1,91 @@
+"use client";
+import { caseStudies } from "@/constants/caseStudies";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const CaseStudies = () => {
+  return (
+    <section className="container py-[70px]">
+      <div className="flex flex-col items-center justify-center pb-[45px] pt-[34px]">
+        <div className="text-center">
+          <span className="font-['DM Sans'] text-5xl font-bold leading-[76.80px] text-black dark:text-white">
+            Case{" "}
+          </span>
+          <span className="font-['DM Sans'] text-5xl font-bold leading-[76.80px] text-blue-500">
+            Studies
+          </span>
+        </div>
+      </div>
+      <div className="flex flex-col gap-x-32 gap-y-24">
+        {caseStudies.map((study) => (
+          <div key={study.id} className="flex even:flex-row-reverse items-center justify-start gap-16 rounded-[10px] bg-slate-50 max-lg:flex-col-reverse lg:pl-[30px] lg:pr-[30.01px] dark:bg-black/50">
+            <div className="flex w-2/3 flex-col items-start justify-start">
+              <div className="flex flex-col items-start justify-start gap-[13px] self-stretch pb-[104.36px] pt-[25px]">
+                <div className="w-fit max-lg:hidden">
+                  <Image
+                    className="relative hidden h-[35px] w-full dark:block"
+                    src="/images/logo/logo-white.svg"
+                    alt=""
+                    width={140}
+                    height={35}
+                  />
+                  <Image
+                    className="relative block h-[35px] w-full dark:hidden"
+                    src="/images/logo/logo.svg"
+                    alt=""
+                    width={140}
+                    height={35}
+                  />
+                </div>
+                <div className="flex flex-col items-center justify-center pr-[0.75px] max-lg:text-center lg:items-start">
+                  <div className="flex pb-[9.59px]">
+                    <div className="font-['DM Sans'] text-4xl font-bold leading-[57.60px] text-black dark:text-white">
+                      {study.title}
+                    </div>
+                  </div>
+                  <div className="flex pb-[10.39px]">
+                    <div className="font-['DM Sans'] text-lg font-medium leading-normal text-blue-500">
+                      {study.category}
+                    </div>
+                  </div>
+                  <div className="flex ">
+                    <div className="font-['DM Sans'] text-xl font-normal leading-[30px] text-black dark:text-white">
+                      {study.description}
+                    </div>
+                  </div>
+                  <Link
+                    href={study.link}
+                    className="border-primaryBlue text-primaryBlue hover:bg-app-orange hover:border-app-orange mt-3 flex rounded-lg border px-4 py-2 hover:text-white"
+                  >
+                    View Case Study
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex max-h-[472px] overflow-hidden max-w-[697px] items-center justify-center pb-[8.60px]">
+              <video
+                preload="auto"
+                autoPlay
+                muted
+                loop
+                className="h-full w-full"
+                src={study.image}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center justify-center">
+        <Link
+          href={"/work"}
+          className="border-primaryBlue text-primaryBlue hover:bg-app-orange hover:border-app-orange mt-8 flex w-fit rounded border px-4 py-2 font-bold hover:text-white"
+        >
+          Explore More
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default CaseStudies;

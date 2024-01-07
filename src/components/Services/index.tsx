@@ -19,14 +19,14 @@ const Services = () => {
           solutions.
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-x-32 gap-y-4 lg:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-x-32 gap-y-4 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
         {services.map((service) => (
           <div
             key={service.id}
             className="group flex w-full min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 px-[17px] pb-[0.01px] pt-[27px] hover:bg-primaryBlue dark:border-white/10"
           >
             <div className="flex w-full flex-col">
-              <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-black text-opacity-10 group-hover:text-white dark:text-white">
+              <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-black text-opacity-40 group-hover:text-white dark:text-white">
                 0{service.id}
               </h2>
               <div className="[&>svg>g>path]:fill-black [&>svg>g>path]:group-hover:fill-white [&>svg>g>path]:dark:fill-white [&>svg>path]:fill-black [&>svg>path]:group-hover:fill-white [&>svg>path]:dark:fill-white [&>svg]:h-9 [&>svg]:w-9">
@@ -48,8 +48,8 @@ const Services = () => {
         ))}
         <div className="group flex w-full min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 bg-app-orange px-[17px] pb-[0.01px] pt-[27px] dark:border-white/10">
           <div className="flex w-full flex-col">
-            <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-black text-opacity-10 opacity-0 dark:text-white">
-              1
+            <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-white">
+              08
             </h2>
           </div>
           <div className="flex flex-col">

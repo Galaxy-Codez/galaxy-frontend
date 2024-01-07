@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     name: "Jackie Philbin",
     title: "Director",
     org: "Nutrition for Longevity",
-    desc: "“Ropstam was an excellent partner in bringing our vision to life! They managed to strike the right balance between aesthetics and functionality, ensuring that the end product was not only visually appealing but also practical and usable.”",
+    desc: "“GalaxyCodez was an excellent partner in bringing our vision to life! They managed to strike the right balance between aesthetics and functionality, ensuring that the end product was not only visually appealing but also practical and usable.”",
     img: "/images/testimonials/Mask-group-1-190x300.webp",
   },
   {
@@ -30,7 +30,7 @@ export const testimonials: Testimonial[] = [
     name: "Mike Stanzyk",
     title: "CEO",
     org: "Stanzyk LLC",
-    desc: "“Their dedication to their clients is really impressive.  Ropstam Solutions Inc. communicates effectively with the client to ensure customer satisfaction.”",
+    desc: "“Their dedication to their clients is really impressive.  GalaxyCodez Inc. communicates effectively with the client to ensure customer satisfaction.”",
     img: "/images/testimonials/mike-stanzyk.webp",
   },
 ];

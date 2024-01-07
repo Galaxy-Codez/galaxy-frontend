@@ -14,9 +14,9 @@ const Footer = () => {
             <FaPhoneAlt size={36} />
             <div className="h-full min-h-10 w-0.5 bg-white" />
             <div className="flex flex-col gap-3">
-              <h5 className="text-xs">
+              <p className="text-xs">
                 <span>Have a query?</span>
-              </h5>
+              </p>
               <div className="hover:text-primaryBlue">
                 <Link href="tel:+92 (342) 2930560">
                   <span>+92 (342) 2930560</span>
@@ -27,6 +27,7 @@ const Footer = () => {
           <div className="flex flex-col flex-wrap items-center gap-3">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
+                aria-label="Linkedin"
                 href="https://linkedin.com/afzalimdad9"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >
@@ -34,6 +35,7 @@ const Footer = () => {
               </Link>
 
               <Link
+                aria-label="Instagram"
                 href="https://www.instagram.com/afzalimdad9_/"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >
@@ -41,6 +43,7 @@ const Footer = () => {
               </Link>
 
               <Link
+                aria-label="Facebook"
                 href="https://facebook.com/afzalimdad92"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >
@@ -67,9 +70,9 @@ const Footer = () => {
             <IoIosMail size={48} />
             <div className="h-full min-h-10 w-0.5 bg-white" />
             <div className="flex flex-col gap-3">
-              <h5 className="text-xs">
+              <p className="text-xs">
                 <span>Email us at</span>
-              </h5>
+              </p>
               <div className="hover:text-primaryBlue">
                 <Link href="mailto:afzalimdad9@gmail.com">
                   <span>afzalimdad9@gmail.com</span>

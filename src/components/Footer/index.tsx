@@ -52,14 +52,16 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/terms-of-use"
+                href={"/#"}
+                // href="/terms-of-use"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >
                 Terms of Use
               </Link>
               <span> –</span>
               <Link
-                href="/privacy-policy"
+                href={"/#"}
+                // href="/privacy-policy"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >
                 Privacy Policy.

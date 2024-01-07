@@ -19,7 +19,8 @@ const Testimonials = () => {
           the highest standards of excellence.
         </p>
         <Link
-          href={"/contact"}
+          href={"/#"}
+          // href={"/contact"}
           className="mt-8 flex w-fit rounded border border-primaryBlue px-8 py-3 font-bold text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
           Contact Us
@@ -40,9 +41,9 @@ const Testimonials = () => {
                   data-lazy-src={testimonial.img}
                   data-ll-status="loaded"
                 />
-                <div className="-right-0 inline-flex w-fit flex-col items-start justify-start rounded-bl-[5px] rounded-tl-[5px] border-l-4 border-blue-500 dark:bg-black/50 bg-slate-100 py-12 pl-10 lg:pl-[53px] pr-4 lg:absolute">
+                <div className="-right-0 inline-flex w-fit flex-col items-start justify-start rounded-bl-[5px] rounded-tl-[5px] border-l-4 border-blue-500 bg-slate-100 py-12 pl-10 pr-4 lg:absolute lg:pl-[53px] dark:bg-black/50">
                   <div className="flex flex-col items-start justify-start self-stretch border-l border-blue-500 pl-[41px]">
-                    <span className="font-['DM Sans'] max-w-[500px] text-base font-normal dark:text-white text-black xl:text-[22px]">
+                    <span className="font-['DM Sans'] max-w-[500px] text-base font-normal text-black xl:text-[22px] dark:text-white">
                       {testimonial.desc}
                     </span>
                   </div>

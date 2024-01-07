@@ -82,7 +82,8 @@ const CaseStudies = () => {
       </div>
       <div className="flex items-center justify-center">
         <Link
-          href={"/work"}
+          // href={"/work"}
+          href={"/#"}
           className="mt-8 flex w-fit rounded border border-primaryBlue px-4 py-2 font-bold text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
           Explore More

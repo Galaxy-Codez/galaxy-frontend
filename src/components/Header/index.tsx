@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header shadow-nav left-0 top-0 z-40 flex w-full items-center bg-white dark:bg-dark ${
+        className={`ud-header left-0 top-0 z-40 flex w-full items-center bg-white shadow-nav dark:bg-dark ${
           sticky
             ? "fixed z-[9999] border-b border-stroke  backdrop-blur-[5px] transition dark:border-dark-3/20 "
             : "absolute"
@@ -105,7 +105,7 @@ const Header = () => {
                           <Link
                             scroll={false}
                             // href={menuItem.path}
-                            href={'/#'}
+                            href={"/#"}
                             className={`ud-menu-scroll flex py-2 text-base font-bold text-dark group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 dark:text-white dark:group-hover:text-primary ${
                               pathUrl === menuItem?.path &&
                               sticky &&
@@ -123,7 +123,7 @@ const Header = () => {
                           key={index}
                         >
                           <Link
-                            href={'/#'}
+                            href={"/#"}
                             // href={menuItem?.url || pathUrl}
                             onMouseEnter={() => handleSubmenu(index)}
                             className={`ud-menu-scroll flex items-center justify-between py-2 text-base font-bold text-dark group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 dark:text-white dark:group-hover:text-primary`}
@@ -161,7 +161,7 @@ const Header = () => {
                             {menuItem.submenu.map((submenuItem: any) => (
                               <Link
                                 // href={submenuItem.path}
-                                href={'/#'}
+                                href={"/#"}
                                 key={submenuItem.id}
                                 className={`flex flex-col gap-2 rounded px-4 py-[10px] text-sm font-bold hover:bg-black/10 ${
                                   pathUrl === submenuItem.path
@@ -185,7 +185,8 @@ const Header = () => {
               <div className="hidden items-center justify-end pr-16 sm:flex lg:pr-0">
                 <div className="flex items-center gap-4">
                   <Link
-                    href="/contact"
+                    href={"/#"}
+                    // href="/contact"
                     className="rounded bg-primary px-4 py-2 uppercase text-white transition-all duration-300 ease-in-out hover:bg-primary/90"
                   >
                     Contact Us

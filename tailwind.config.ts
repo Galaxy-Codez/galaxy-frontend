@@ -13,9 +13,9 @@ const config: Config = {
         nav: "0px 4px 40px 0px rgba(0, 0, 0, 0.05)",
       },
       colors: {
-        primaryBlue: "#2693fa",
+        primaryBlue: "#0073d6",
         app: {
-          orange: "#fa7226",
+          orange: "#e96a23",
         },
       },
       screens: {

@@ -19,7 +19,10 @@ const CaseStudies = () => {
       </div>
       <div className="flex flex-col gap-x-32 gap-y-24">
         {caseStudies.map((study) => (
-          <div key={study.id} className="flex even:flex-row-reverse items-center justify-start gap-16 rounded-[10px] bg-slate-50 max-lg:flex-col-reverse lg:pl-[30px] lg:pr-[30.01px] dark:bg-black/50">
+          <div
+            key={study.id}
+            className="flex items-center justify-start gap-16 rounded-[10px] bg-slate-50 even:flex-row-reverse max-lg:flex-col-reverse max-lg:even:flex-col-reverse lg:pl-[30px] lg:pr-[30.01px] dark:bg-black/50"
+          >
             <div className="flex w-2/3 flex-col items-start justify-start">
               <div className="flex flex-col items-start justify-start gap-[13px] self-stretch pb-[104.36px] pt-[25px]">
                 <div className="w-fit max-lg:hidden">
@@ -56,14 +59,14 @@ const CaseStudies = () => {
                   </div>
                   <Link
                     href={study.link}
-                    className="border-primaryBlue text-primaryBlue hover:bg-app-orange hover:border-app-orange mt-3 flex rounded-lg border px-4 py-2 hover:text-white"
+                    className="mt-3 flex rounded-lg border border-primaryBlue px-4 py-2 text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
                   >
                     View Case Study
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="flex max-h-[472px] overflow-hidden max-w-[697px] items-center justify-center pb-[8.60px]">
+            <div className="flex max-h-[472px] max-w-[697px] items-center justify-center overflow-hidden pb-[8.60px]">
               <video
                 preload="auto"
                 autoPlay
@@ -79,7 +82,7 @@ const CaseStudies = () => {
       <div className="flex items-center justify-center">
         <Link
           href={"/work"}
-          className="border-primaryBlue text-primaryBlue hover:bg-app-orange hover:border-app-orange mt-8 flex w-fit rounded border px-4 py-2 font-bold hover:text-white"
+          className="mt-8 flex w-fit rounded border border-primaryBlue px-4 py-2 font-bold text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
           Explore More
         </Link>

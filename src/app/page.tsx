@@ -1,8 +1,11 @@
 import CaseStudies from "@/components/CaseStudies";
 import ScrollUp from "@/components/Common/ScrollUp";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import HireNewTeam from "@/components/HireNewTeam";
 import Services from "@/components/Services";
+import ToolsAndTechnologies from "@/components/Technologies";
+import Testimonials from "@/components/Testimonials";
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +15,7 @@ export const metadata: Metadata = {
     canonical: "https://galaxycodez.com",
   },
   description:
-    "Empower your business growth with world-class software, mobile apps and website development with Ropstam Solutions.",
+    "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Galaxy Codez",
     images: [
       {
-        url: "https://galaxycodez.com/images/og-image.jpg",
+        url: "https://galaxycodez.com/opengraph-images/home.png",
         width: 1200,
         height: 630,
         alt: "Galaxy Codez",
@@ -32,24 +35,24 @@ export const metadata: Metadata = {
     creator: "@galaxycodez",
     creatorId: "https://twitter.com/galaxycodez",
     description:
-      "Empower your business growth with world-class software, mobile apps and website development with Ropstam Solutions.",
+      "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez.",
     title: "Web, Mobile & Software Development Company - Galaxy Codez",
     site: "@galaxycodez",
     siteId: "https://twitter.com/galaxycodez",
     images: [
       {
-        url: "https://galaxycodez.com/images/og-image.jpg",
+        url: "https://galaxycodez.com/opengraph-images/home.png",
         width: 1200,
         height: 630,
         alt: "Galaxy Codez",
         type: "image/jpeg",
         host: "galaxycodez.com",
         hostname: "galaxycodez.com",
-        href: "https://galaxycodez.com/images/og-image.jpg",
-        origin: "https://galaxycodez.com/images/og-image.jpg",
-        pathname: "galaxycodez.com/images/og-image.jpg",
+        href: "https://galaxycodez.com/opengraph-images/home.png",
+        origin: "https://galaxycodez.com/opengraph-images/home.png",
+        pathname: "galaxycodez.com/opengraph-images/home.png",
         username: "galaxycodez",
-        secureUrl: "https://galaxycodez.com/images/og-image.jpg",
+        secureUrl: "https://galaxycodez.com/opengraph-images/home.png",
       },
     ],
   },
@@ -88,6 +91,9 @@ export default function Home() {
       <Services />
       <CaseStudies />
       <HireNewTeam />
+      <Testimonials />
+      <ToolsAndTechnologies />
+      <Contact />
     </main>
   );
 }

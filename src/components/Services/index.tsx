@@ -23,13 +23,15 @@ const Services = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="hover:bg-primaryBlue group flex w-full min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 px-[17px] pb-[0.01px] pt-[27px] dark:border-white/10"
+            className="group flex w-full min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 px-[17px] pb-[0.01px] pt-[27px] hover:bg-primaryBlue dark:border-white/10"
           >
             <div className="flex w-full flex-col">
               <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-black text-opacity-10 group-hover:text-white dark:text-white">
                 0{service.id}
               </h2>
-              {service.image}
+              <div className="[&>svg>g>path]:fill-black [&>svg>g>path]:group-hover:fill-white [&>svg>g>path]:dark:fill-white [&>svg>path]:fill-black [&>svg>path]:group-hover:fill-white [&>svg>path]:dark:fill-white [&>svg]:h-9 [&>svg]:w-9">
+                {service.image}
+              </div>
             </div>
             <div className="flex flex-col">
               <div className="font-['DM Sans'] text-xl font-medium leading-loose text-black group-hover:text-white dark:text-white">
@@ -44,21 +46,18 @@ const Services = () => {
             </div>
           </div>
         ))}
-        <div
-          className="group flex w-full bg-app-orange min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 px-[17px] pb-[0.01px] pt-[27px] dark:border-white/10"
-        >
+        <div className="group flex w-full min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 bg-app-orange px-[17px] pb-[0.01px] pt-[27px] dark:border-white/10">
           <div className="flex w-full flex-col">
-            <h2 className="opacity-0 font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-black text-opacity-10 dark:text-white">
-             1
+            <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-black text-opacity-10 opacity-0 dark:text-white">
+              1
             </h2>
-            
           </div>
           <div className="flex flex-col">
             <div className="font-['DM Sans'] text-xl font-medium leading-loose text-white">
               Explore
             </div>
             <Link
-              href={'service.link'}
+              href={"service.link"}
               className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-white"
             >
               →

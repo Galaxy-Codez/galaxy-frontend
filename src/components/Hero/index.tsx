@@ -43,7 +43,11 @@ const Hero = () => {
           <SwiperSlide key={slider.id} className="relative h-auto w-full">
             <div className="container flex h-full min-h-[92vh] items-center justify-between gap-24 py-32">
               <div className="w-full max-lg:text-center xl:w-1/2">
-                <Link href={slider.link} className="w-fit">
+                <Link
+                  href={"/#"}
+                  // href={slider.link}
+                  className="w-fit"
+                >
                   <h1 className="text-2xl font-bold text-white lg:text-4xl">
                     {slider.title}
                   </h1>
@@ -52,7 +56,8 @@ const Hero = () => {
                   {slider.description}
                 </p>
                 <Link
-                  href={slider.link}
+                  href={"/#"}
+                  // href={slider.link}
                   className="mt-8 rounded-lg border border-white bg-transparent px-4 py-2 text-white hover:bg-white hover:text-black dark:hover:text-white"
                 >
                   {slider.buttonText}
@@ -65,7 +70,7 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
-                className="min-h-[95vh] object-cover w-full h-full"
+                className="h-full min-h-[95vh] w-full object-cover"
                 src={slider.imageUrl}
               />
             </div>

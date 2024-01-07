@@ -19,7 +19,7 @@ const Services = () => {
           solutions.
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-x-32 gap-y-4 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
+      <div className="3xl:grid-cols-4 grid grid-cols-1 gap-x-32 gap-y-4 lg:grid-cols-2 xl:grid-cols-3">
         {services.map((service) => (
           <div
             key={service.id}
@@ -38,7 +38,8 @@ const Services = () => {
                 {service.title}
               </div>
               <Link
-                href={service.link}
+                href={"/#"}
+                // href={service.link}
                 className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-black group-hover:text-white dark:text-white"
               >
                 →
@@ -57,7 +58,8 @@ const Services = () => {
               Explore
             </div>
             <Link
-              href={"service.link"}
+              href={"/#"}
+              // href={"service.link"}
               className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-white"
             >
               →

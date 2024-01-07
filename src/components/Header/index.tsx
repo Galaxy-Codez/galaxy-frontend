@@ -104,7 +104,8 @@ const Header = () => {
                         <li key={index} className="group relative">
                           <Link
                             scroll={false}
-                            href={menuItem.path}
+                            // href={menuItem.path}
+                            href={'/#'}
                             className={`ud-menu-scroll flex py-2 text-base font-bold text-dark group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 dark:text-white dark:group-hover:text-primary ${
                               pathUrl === menuItem?.path &&
                               sticky &&
@@ -122,7 +123,8 @@ const Header = () => {
                           key={index}
                         >
                           <Link
-                            href={menuItem?.url || pathUrl}
+                            href={'/#'}
+                            // href={menuItem?.url || pathUrl}
                             onMouseEnter={() => handleSubmenu(index)}
                             className={`ud-menu-scroll flex items-center justify-between py-2 text-base font-bold text-dark group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 dark:text-white dark:group-hover:text-primary`}
                           >
@@ -158,7 +160,8 @@ const Header = () => {
                           >
                             {menuItem.submenu.map((submenuItem: any) => (
                               <Link
-                                href={submenuItem.path}
+                                // href={submenuItem.path}
+                                href={'/#'}
                                 key={submenuItem.id}
                                 className={`flex flex-col gap-2 rounded px-4 py-[10px] text-sm font-bold hover:bg-black/10 ${
                                   pathUrl === submenuItem.path

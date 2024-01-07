@@ -58,7 +58,8 @@ const CaseStudies = () => {
                     </div>
                   </div>
                   <Link
-                    href={study.link}
+                    href={'/#'}
+                    // href={study.link}
                     className="mt-3 flex rounded-lg border border-primaryBlue px-4 py-2 text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
                   >
                     View Case Study

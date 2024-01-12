@@ -5,10 +5,13 @@ const BASE_URL = "https://galaxy-frontend.vercel.app";
 const API_BASE_URL = "http://localhost:8080";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const blogs = await fetch(API_BASE_URL + "/blogs")
-    .then((res) => res.json())
-    .then((data) => data.data);
-  const blogRoutes = blogs.map((blog: Blog) => ({
+  const blogs: Blog[] = await new Promise(function (resolve, reject) {
+    fetch(API_BASE_URL + "/blogs")
+      .then((res) => res.json())
+      .then((data) => resolve(data.data))
+    .catch((err) => reject(err));
+  });
+  const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog: Blog) => ({
     url: `${BASE_URL}/${blog.slug}`,
     lastModified: new Date(blog.createdAt),
     changeFrequency: "yearly",

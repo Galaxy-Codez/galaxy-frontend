@@ -48,7 +48,7 @@ const CaseStudies = () => {
                     </div>
                   </div>
                   <div className="flex pb-[10.39px]">
-                    <div className="font-['DM Sans'] text-lg font-medium leading-normal text-blue-500">
+                    <div className="font-['DM Sans'] text-lg font-medium leading-normal text-white rounded px-4 bg-blue-500">
                       {study.category}
                     </div>
                   </div>

@@ -27,7 +27,7 @@ const HireNewTeam = () => {
         <Link
           href={"/#"}
           // href={"/hire-dedicated-team"}
-          className="mt-8 flex w-fit rounded border border-primaryBlue px-4 py-2 font-bold capitalize text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
+          className="mt-8 flex w-fit rounded border border-primaryBlue text-white px-4 py-2 font-bold capitalize bg-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
           Let&apos;s get started
         </Link>

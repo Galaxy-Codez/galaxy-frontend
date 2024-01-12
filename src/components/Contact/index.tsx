@@ -46,7 +46,7 @@ const Contact = () => {
             cols={4}
             className="w-full border-b border-black/10 bg-transparent px-2 py-6 outline-none lg:min-w-96 dark:border-white"
           />
-          <button className="hover:bg-transparent flex w-fit rounded border border-app-orange bg-app-orange px-8 py-3 font-bold text-white hover:border-primaryBlue hover:text-primaryBlue">
+          <button className="hover:bg-transparent flex w-fit rounded border hover:border-app-orange hover:bg-app-orange px-8 py-3 font-bold hover:text-app-orange text-white border-primaryBlue bg-primaryBlue">
             Get in touch
           </button>
         </div>

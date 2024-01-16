@@ -36,7 +36,7 @@ const Testimonials = () => {
                   width={489}
                   height={472}
                   src={testimonial.img}
-                  className="h-[600px] w-[350px]"
+                  className="h-[600px] max-lg:max-h-[300px] object-scale-down w-full lg:w-[350px]"
                   alt={testimonial.name + " testimonial for galaxy codez"}
                   data-lazy-src={testimonial.img}
                   data-ll-status="loaded"
@@ -50,10 +50,10 @@ const Testimonials = () => {
                   <div className="flex flex-col items-start justify-start self-stretch pt-4">
                     <div className="flex flex-col items-start justify-start self-stretch pl-10 pr-[30.36px]">
                       <div>
-                        <span className="font-['DM Sans'] text-base font-bold leading-relaxed text-primaryBlue xl:text-[22px]">
+                        <span className="font-['DM Sans'] text-base font-bold leading-relaxed text-black dark:text-white xl:text-[22px]">
                           {testimonial.name},
                         </span>
-                        <span className="font-['DM Sans'] text-base font-normal leading-relaxed text-primaryBlue xl:text-[22px]">
+                        <span className="font-['DM Sans'] text-base font-normal leading-relaxed text-black dark:text-white xl:text-[22px]">
                           {" "}
                           {testimonial.title}, {testimonial.org}
                         </span>

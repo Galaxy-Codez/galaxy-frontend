@@ -36,8 +36,8 @@ const Hero = () => {
         slidesPerView={1}
         allowSlideNext
         allowSlidePrev
-        // autoplay
-        className="h-full bg-black min-h-[90vh] w-full"
+        autoplay
+        className="h-full bg-[#000] min-h-[90vh] w-full"
       >
         {heroSlider.map((slider) => (
           <SwiperSlide key={slider.id} className="relative h-auto w-full">
@@ -77,8 +77,8 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-next right-4 lg:right-12 min-h-5 min-w-11 lg:min-h-10 lg:min-w-11 rounded-full bg-white p-4 after:text-2xl after:text-black after:![content:'next'] dark:bg-black after:dark:text-white"></div>
-      <div className="swiper-button-prev left-4 lg:left-12 min-h-5 min-w-11 lg:min-h-10 lg:min-w-11 rounded-full bg-white p-4 after:text-2xl after:text-black after:![content:'prev'] dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-next right-4 lg:right-12 min-h-5 min-w-11 lg:min-h-10 lg:min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-prev left-4 lg:left-12 min-h-5 min-w-11 lg:min-h-10 lg:min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] dark:bg-black after:dark:text-white"></div>
     </section>
   );
 };

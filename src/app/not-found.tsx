@@ -4,6 +4,13 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "404 Page",
+  description: `Uh-oh! It seems like you've encountered a digital anomaly – the page you're searching for appears to be lost in the vast reaches of cyberspace. Not to worry, though! Our cosmic development team is actively working on resolving this issue.
+
+While we navigate through the stars to recover the missing page, why not explore other celestial corners of our site? Return to the homepage or use the search feature to discover a constellation of relevant information.
+
+Should you believe this is a technical hiccup, kindly inform us so we can dispatch our tech wizards for immediate assistance.
+
+Thank you for your understanding, and may your digital journey be smooth and filled with stellar discoveries!`,
 };
 
 const ErrorPage = () => {

@@ -50,10 +50,10 @@ const Testimonials = () => {
                   <div className="flex flex-col items-start justify-start self-stretch pt-4">
                     <div className="flex flex-col items-start justify-start self-stretch pl-10 pr-[30.36px]">
                       <div>
-                        <span className="font-['DM Sans'] text-base font-bold leading-relaxed text-blue-500 xl:text-[22px]">
+                        <span className="font-['DM Sans'] text-base font-bold leading-relaxed text-primaryBlue xl:text-[22px]">
                           {testimonial.name},
                         </span>
-                        <span className="font-['DM Sans'] text-base font-normal leading-relaxed text-blue-500 xl:text-[22px]">
+                        <span className="font-['DM Sans'] text-base font-normal leading-relaxed text-primaryBlue xl:text-[22px]">
                           {" "}
                           {testimonial.title}, {testimonial.org}
                         </span>

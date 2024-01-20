@@ -53,7 +53,7 @@ const Hero = () => {
                     {slider.title}
                   </h1>
                 </Link>
-                <p className="my-6 text-base text-white">
+                <p className="my-8 lg:my-6 text-base text-white">
                   {slider.description}
                 </p>
                 <Link
@@ -70,7 +70,7 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
-                className="h-full min-h-[95vh] w-full object-cover"
+                className="h-full min-h-[95vh] opacity-85 w-full object-cover"
                 src={slider.imageUrl}
               />
             </div>

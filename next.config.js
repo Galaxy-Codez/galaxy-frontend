@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const nextConfig = {
   reactStrictMode: true,
@@ -15,8 +15,8 @@ const nextConfig = {
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false
-      config.optimization.minimizer = []
-      config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}))
+      config.optimization.minimizer = [];
+      config.optimization.minimizer.push(new CssMinimizerPlugin())
     }
     return config
   },

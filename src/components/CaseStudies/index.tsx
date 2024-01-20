@@ -3,6 +3,7 @@ import { caseStudies } from "@/constants/caseStudies";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import LazyVideo from "../Common/Video"
 
 const CaseStudies = () => {
   return (
@@ -30,12 +31,14 @@ const CaseStudies = () => {
                     className="relative hidden h-[35px] w-full dark:block"
                     src="/images/logo/logo-white.svg"
                     alt=""
+                    loading="lazy"
                     width={140}
                     height={35}
                   />
                   <Image
                     className="relative block h-[35px] w-full dark:hidden"
                     src="/images/logo/logo.svg"
+                    loading="lazy"
                     alt=""
                     width={140}
                     height={35}
@@ -48,7 +51,7 @@ const CaseStudies = () => {
                     </div>
                   </div>
                   <div className="flex pb-[10.39px]">
-                    <div className="font-['DM Sans'] text-lg font-semibold leading-normal text-black dark:text-white rounded">
+                    <div className="font-['DM Sans'] rounded text-lg font-semibold leading-normal text-black dark:text-white">
                       {study.category}
                     </div>
                   </div>
@@ -58,7 +61,7 @@ const CaseStudies = () => {
                     </div>
                   </div>
                   <Link
-                    href={'/#'}
+                    href={"/"}
                     // href={study.link}
                     className="mt-3 flex rounded-lg border border-primaryBlue px-4 py-2 text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
                   >
@@ -68,12 +71,11 @@ const CaseStudies = () => {
               </div>
             </div>
             <div className="flex max-h-[472px] max-w-[697px] items-center justify-center overflow-hidden pb-[8.60px]">
-              <video
-                preload="auto"
+              <LazyVideo
                 autoPlay
                 muted
                 loop
-                className="h-full w-full"
+                className="lazy h-full w-full"
                 src={study.image}
               />
             </div>
@@ -83,7 +85,7 @@ const CaseStudies = () => {
       <div className="flex items-center justify-center">
         <Link
           // href={"/work"}
-          href={"/#"}
+          href={"/"}
           className="mt-8 flex w-fit rounded border border-primaryBlue px-4 py-2 font-bold text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
           Explore More

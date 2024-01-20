@@ -38,7 +38,7 @@ const Services = () => {
                 {service.title}
               </div>
               <Link
-                href={"/#"}
+                href={"/"}
                 // href={service.link}
                 className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-black group-hover:text-white dark:text-white"
               >
@@ -58,7 +58,7 @@ const Services = () => {
               Explore
             </div>
             <Link
-              href={"/#"}
+              href={"/"}
               // href={"service.link"}
               className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-white"
             >

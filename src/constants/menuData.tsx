@@ -126,7 +126,7 @@ const menuData: Menu[] = [
   {
     id: 4,
     title: "Insights",
-    url: "/#",
+    url: "/",
     newTab: false,
     submenu: [
       {

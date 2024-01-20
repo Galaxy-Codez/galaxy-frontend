@@ -58,5 +58,5 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  @apply bg-white;
+  @apply !bg-white;
 }

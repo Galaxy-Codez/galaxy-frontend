@@ -4,13 +4,14 @@ import Link from "next/link";
 import React from "react";
 import { Pagination, Autoplay, EffectFade, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import LazyVideo from "../Common/Video";
 
 const Hero = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (_index: number, className: string) {
       return (
-        '<span class="cursor-pointer w-4 h-2 !rounded ' +
+        '<span class="!cursor-pointer !w-4 !h-2 !rounded ' +
         className +
         '">' +
         "</span>"
@@ -37,14 +38,14 @@ const Hero = () => {
         allowSlideNext
         allowSlidePrev
         autoplay
-        className="h-full bg-[#000] min-h-[90vh] w-full"
+        className="h-full min-h-[90vh] w-full bg-[#000]"
       >
         {heroSlider.map((slider) => (
           <SwiperSlide key={slider.id} className="relative h-auto w-full">
             <div className="container flex h-full min-h-[92vh] items-center justify-between gap-24 py-32">
               <div className="w-full max-lg:text-center xl:w-1/2">
                 <Link
-                  href={"/#"}
+                  href={"/"}
                   // href={slider.link}
                   className="w-fit"
                 >
@@ -56,7 +57,7 @@ const Hero = () => {
                   {slider.description}
                 </p>
                 <Link
-                  href={"/#"}
+                  href={"/"}
                   // href={slider.link}
                   className="mt-8 rounded-lg border border-white bg-transparent px-4 py-2 text-white hover:bg-white hover:text-black dark:hover:text-white"
                 >
@@ -65,8 +66,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="absolute top-0 -z-10 h-full w-full">
-              <video
-                preload="auto"
+              <LazyVideo
                 autoPlay
                 muted
                 loop
@@ -77,8 +77,8 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-next right-4 lg:right-12 min-h-5 min-w-11 lg:min-h-10 lg:min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] dark:bg-black after:dark:text-white"></div>
-      <div className="swiper-button-prev left-4 lg:left-12 min-h-5 min-w-11 lg:min-h-10 lg:min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-next right-4 min-h-5 min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] lg:right-12 lg:min-h-10 lg:min-w-11 dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-prev left-4 min-h-5 min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] lg:left-12 lg:min-h-10 lg:min-w-11 dark:bg-black after:dark:text-white"></div>
     </section>
   );
 };

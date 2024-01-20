@@ -25,9 +25,9 @@ const HireNewTeam = () => {
           of managing full-time employees.
         </div>
         <Link
-          href={"/#"}
+          href={"/"}
           // href={"/hire-dedicated-team"}
-          className="mt-8 flex w-fit rounded border border-primaryBlue text-white px-4 py-2 font-bold capitalize bg-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
+          className="mt-8 flex w-fit rounded border border-primaryBlue bg-primaryBlue px-4 py-2 font-bold capitalize text-white hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
           Let&apos;s get started
         </Link>
@@ -36,6 +36,7 @@ const HireNewTeam = () => {
         fetchPriority="high"
         decoding="async"
         width={930}
+        loading="lazy"
         height={813}
         src="/images/fivetms-mockup.webp"
         alt="five tms AI software developed using android, ios, and web application development services by Galaxy Codez."

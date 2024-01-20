@@ -28,6 +28,7 @@ const ErrorPage = () => {
                   alt="image"
                   fill
                   className="mx-auto max-w-full"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -78,7 +79,7 @@ const ErrorPage = () => {
                   have been moved or deleted.
                 </p>
                 <a
-                  href="/#"
+                  href="/"
                   className="rounded-md bg-dark px-7 py-3 text-base font-medium text-white transition hover:bg-primary"
                 >
                   Go To Home

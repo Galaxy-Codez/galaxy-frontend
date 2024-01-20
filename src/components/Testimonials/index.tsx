@@ -19,7 +19,7 @@ const Testimonials = () => {
           the highest standards of excellence.
         </p>
         <Link
-          href={"/#"}
+          href={"/"}
           // href={"/contact"}
           className="mt-8 flex w-fit rounded border border-primaryBlue px-8 py-3 font-bold text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >
@@ -35,8 +35,9 @@ const Testimonials = () => {
                   decoding="async"
                   width={489}
                   height={472}
+                  loading="lazy"
                   src={testimonial.img}
-                  className="h-[600px] max-lg:max-h-[300px] object-scale-down w-full lg:w-[350px]"
+                  className="h-[600px] w-full object-scale-down max-lg:max-h-[300px] lg:w-[350px]"
                   alt={testimonial.name + " testimonial for galaxy codez"}
                   data-lazy-src={testimonial.img}
                   data-ll-status="loaded"
@@ -50,10 +51,10 @@ const Testimonials = () => {
                   <div className="flex flex-col items-start justify-start self-stretch pt-4">
                     <div className="flex flex-col items-start justify-start self-stretch pl-10 pr-[30.36px]">
                       <div>
-                        <span className="font-['DM Sans'] text-base font-bold leading-relaxed text-black dark:text-white xl:text-[22px]">
+                        <span className="font-['DM Sans'] text-base font-bold leading-relaxed text-black xl:text-[22px] dark:text-white">
                           {testimonial.name},
                         </span>
-                        <span className="font-['DM Sans'] text-base font-normal leading-relaxed text-black dark:text-white xl:text-[22px]">
+                        <span className="font-['DM Sans'] text-base font-normal leading-relaxed text-black xl:text-[22px] dark:text-white">
                           {" "}
                           {testimonial.title}, {testimonial.org}
                         </span>

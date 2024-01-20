@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { IoIosMail } from "react-icons/io";
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -52,7 +57,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap gap-4">
               <Link
-                href={"/#"}
+                href={"/"}
                 // href="/terms-of-use"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >
@@ -60,7 +65,7 @@ const Footer = () => {
               </Link>
               <span> –</span>
               <Link
-                href={"/#"}
+                href={"/"}
                 // href="/privacy-policy"
                 className=" text-[#ffffffbd] hover:text-primaryBlue"
               >

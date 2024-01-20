@@ -62,6 +62,7 @@ const ToolsAndTechnologies = () => {
                       src={tech.img}
                       alt=""
                       width={85}
+                      loading="lazy"
                       height={85}
                       className="relative h-[85px] w-[85px]"
                     />

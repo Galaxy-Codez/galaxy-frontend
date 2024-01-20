@@ -10,7 +10,6 @@ const LayoutProvider = ({
 }: {
   children?: React.ReactNode
   }) => {
-  
   return (
     <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
       <Header />

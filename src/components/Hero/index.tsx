@@ -77,8 +77,8 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-next right-4 min-h-5 min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] lg:right-12 lg:min-h-10 lg:min-w-11 dark:bg-black after:dark:text-white"></div>
-      <div className="swiper-button-prev left-4 min-h-5 min-w-11 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] lg:left-12 lg:min-h-10 lg:min-w-11 dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-next right-4 !h-5 !w-6 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] lg:right-12 lg:!min-h-10 lg:!min-w-10 dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-prev left-4 !h-5 !w-6 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] lg:left-12 lg:!min-h-10 lg:!min-w-10 dark:bg-black after:dark:text-white"></div>
     </section>
   );
 };

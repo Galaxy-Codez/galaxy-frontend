@@ -53,7 +53,7 @@ const Hero = () => {
                     {slider.title}
                   </h1>
                 </Link>
-                <p className="my-6 text-sm text-white lg:text-base">
+                <p className="my-6 text-white text-base">
                   {slider.description}
                 </p>
                 <Link

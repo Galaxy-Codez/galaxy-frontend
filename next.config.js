@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withCSS = require("@zeit/next-css")
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
-const nextConfig = withCSS({
+const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -17,10 +16,10 @@ const nextConfig = withCSS({
     if (!isServer) {
       config.resolve.fallback.fs = false
       config.optimization.minimizer = []
-      config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}));
+      config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}))
     }
     return config
   },
-})
+}
 
 module.exports = nextConfig

@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] overflow-hidden bg-white pt-[60px] md:pt-[75px]"
+      className="relative min-h-[90vh] overflow-hidden bg-[#000] pt-[60px] md:pt-[75px]"
     >
       <Swiper
         pagination={pagination}
@@ -38,7 +38,7 @@ const Hero = () => {
         allowSlideNext
         allowSlidePrev
         autoplay
-        className="h-full min-h-[90vh] w-full bg-[#000]"
+        className="h-full min-h-[90vh] w-full"
       >
         {heroSlider.map((slider) => (
           <SwiperSlide key={slider.id} className="relative h-auto w-full">
@@ -53,7 +53,7 @@ const Hero = () => {
                     {slider.title}
                   </h1>
                 </Link>
-                <p className="my-6 text-white text-base">
+                <p className="my-6 text-base text-white">
                   {slider.description}
                 </p>
                 <Link
@@ -77,8 +77,8 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-next right-4 !h-5 !w-6 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] lg:right-12 lg:!min-h-10 lg:!min-w-10 dark:bg-black after:dark:text-white"></div>
-      <div className="swiper-button-prev left-4 !h-5 !w-6 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] lg:left-12 lg:!min-h-10 lg:!min-w-10 dark:bg-black after:dark:text-white"></div>
+      <div className="swiper-button-next right-4 !h-5 !w-6 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'next'] dark:bg-black after:dark:text-white lg:right-12 lg:!min-h-10 lg:!min-w-10"></div>
+      <div className="swiper-button-prev left-4 !h-5 !w-6 rounded-full bg-white p-4 after:!text-2xl after:text-black after:![content:'prev'] dark:bg-black after:dark:text-white lg:left-12 lg:!min-h-10 lg:!min-w-10"></div>
     </section>
   );
 };

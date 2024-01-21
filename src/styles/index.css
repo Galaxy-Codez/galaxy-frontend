@@ -1,53 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition-duration: 300ms;
-  transition-property: all;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   transform-style: ease-in-out;
 }
-
 body {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
-
 .sticky-menu .navbar-logo {
   @apply py-2;
-}
-
-.sticky-menu #navbarToggler span {
-  @apply bg-dark dark:bg-white;
-}
-
-.sticky-menu #navbarCollapse li > a {
-  @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
 }
 #navbarCollapse li .ud-menu-scroll.active {
   @apply opacity-70;
 }
-.sticky-menu #navbarCollapse li .ud-menu-scroll.active {
-  @apply text-primary opacity-100 dark:text-white;
-}
-.sticky-menu .loginBtn {
-  @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
-}
-
-.sticky-menu .signUpBtn {
-  @apply bg-primary hover:bg-dark text-white hover:text-white;
-}
-
-.navbarTogglerActive > span:nth-child(1) {
+.navbarTogglerActive > span:first-child {
   @apply top-[7px] rotate-45 transform;
 }
 .navbarTogglerActive > span:nth-child(2) {
@@ -56,7 +31,6 @@ body {
 .navbarTogglerActive > span:nth-child(3) {
   @apply top-[-8px] rotate-[135deg];
 }
-
 .swiper-pagination-bullet-active {
   @apply !bg-white;
 }

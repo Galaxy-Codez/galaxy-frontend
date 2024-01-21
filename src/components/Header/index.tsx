@@ -56,7 +56,7 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className="header-logo w-full dark:hidden"
+                  className="header-logo h-auto w-auto dark:hidden"
                 />
                 <Image
                   src={"/images/logo/logo-white.svg"}
@@ -64,7 +64,7 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className="header-logo hidden w-full dark:block"
+                  className="header-logo hidden h-auto w-auto dark:block"
                 />
               </Link>
             </div>
@@ -94,7 +94,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-full border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 dark:border-body-color/20 dark:bg-dark-2 lg:dark:bg-transparent ${
+                  className={`navbar absolute right-0 z-30 w-full border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -108,7 +108,7 @@ const Header = () => {
                             scroll={false}
                             // href={menuItem.path}
                             href={"/"}
-                            className={`ud-menu-scroll flex py-2 text-base font-bold text-dark group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 dark:text-white dark:group-hover:text-primary ${
+                            className={`ud-menu-scroll flex py-2 text-base font-bold text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
                               pathUrl === menuItem?.path &&
                               sticky &&
                               "!text-primary"
@@ -128,7 +128,7 @@ const Header = () => {
                             href={"/"}
                             // href={menuItem?.url || pathUrl}
                             onMouseEnter={() => handleSubmenu(index)}
-                            className={`ud-menu-scroll flex items-center justify-between py-2 text-base font-bold text-dark group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 dark:text-white dark:group-hover:text-primary`}
+                            className={`ud-menu-scroll flex items-center justify-between py-2 text-base font-bold text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6`}
                           >
                             {menuItem.title}
 
@@ -150,7 +150,7 @@ const Header = () => {
                           </Link>
 
                           <div
-                            className={`submenu relative left-0 top-full w-full rounded-sm border-t-4 border-primary bg-white p-4 px-0 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:px-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full dark:bg-dark-2 ${
+                            className={`submenu relative left-0 top-full w-full rounded-sm border-t-4 border-primary bg-white p-4 px-0 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:px-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                               openIndex === index
                                 ? "lg:!-left-[25px]"
                                 : "hidden"
@@ -172,9 +172,11 @@ const Header = () => {
                                 }`}
                               >
                                 {submenuItem.title}
-                                <p className="text-xs font-normal">
-                                  {submenuItem.desc}
-                                </p>
+                                {submenuItem.desc && (
+                                  <p className="text-xs font-normal">
+                                    {submenuItem.desc}
+                                  </p>
+                                )}
                               </Link>
                             ))}
                           </div>

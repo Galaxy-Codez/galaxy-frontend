@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import HireNewTeam from "@/components/HireNewTeam";
 import Services from "@/components/Services";
-import ToolsAndTechnologies from "@/components/Technologies";
+import ToolsAndTechnologies from "@/components/Common/Technologies";
 import Testimonials from "@/components/Testimonials";
 import { Metadata, Viewport } from "next";
 

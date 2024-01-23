@@ -9,20 +9,20 @@ import "swiper/css/effect-fade";
 
 export const metadata: Metadata = {
   title: { default: "", template: "%s - Galaxy Codez" },
-  metadataBase: new URL("https://galaxy-frontend.vercel.app"),
+  metadataBase: new URL(process.env.FRONTEND_URL),
   alternates: {
-    canonical: "https://galaxy-frontend.vercel.app",
+    canonical: process.env.FRONTEND_URL,
   },
   description:
     "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://galaxy-frontend.vercel.app",
+    url: process.env.FRONTEND_URL,
     siteName: "Galaxy Codez",
     images: [
       {
-        url: "https://galaxy-frontend.vercel.app/opengraph-images/home.png",
+        url: process.env.FRONTEND_URL + "/opengraph-images/home.png",
         width: 1200,
         height: 630,
         alt: "Galaxy Codez",
@@ -40,26 +40,25 @@ export const metadata: Metadata = {
     siteId: "https://twitter.com/galaxycodez",
     images: [
       {
-        url: "https://galaxy-frontend.vercel.app/opengraph-images/home.png",
+        url: process.env.FRONTEND_URL + "/opengraph-images/home.png",
         width: 1200,
         height: 630,
         alt: "Galaxy Codez",
         type: "image/jpeg",
         host: "galaxycodez.com",
         hostname: "galaxycodez.com",
-        href: "https://galaxy-frontend.vercel.app/opengraph-images/home.png",
-        origin: "https://galaxy-frontend.vercel.app/opengraph-images/home.png",
+        href: process.env.FRONTEND_URL + "/opengraph-images/home.png",
+        origin: process.env.FRONTEND_URL + "/opengraph-images/home.png",
         pathname: "galaxycodez.com/opengraph-images/home.png",
         username: "galaxycodez",
-        secureUrl:
-          "https://galaxy-frontend.vercel.app/opengraph-images/home.png",
+        secureUrl: process.env.FRONTEND_URL + "/opengraph-images/home.png",
       },
     ],
   },
   applicationName: "Galaxy Codez",
   authors: {
     name: "Galaxy Codez",
-    url: "https://galaxy-frontend.vercel.app",
+    url: process.env.FRONTEND_URL,
   },
   category: "Software Development",
   creator: "Galaxy Codez",

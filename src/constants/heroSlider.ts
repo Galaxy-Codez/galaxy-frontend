@@ -1,4 +1,4 @@
-export  const heroSlider: Slide[] = [
+export const heroSlider: Slide[] = [
   {
     id: 1,
     title:
@@ -6,7 +6,7 @@ export  const heroSlider: Slide[] = [
     description:
       "Are you ready to take your business to the next level with secure and decentralized solutions? Look no further than our blockchain development expertise. Discover how we can empower your operations and revolutionize your business with cutting-edge technology.",
     buttonText: "Blockchain Services",
-    link: "/blockchain-development-services",
+    link: "/",
     imageUrl: "/images/hero/blockchain-development.mp4",
   },
   {
@@ -16,7 +16,7 @@ export  const heroSlider: Slide[] = [
     description:
       "Unlock the full potential of your business with a dedicated team of experts handpicked to meet your unique needs and drive your success.",
     buttonText: "Hire Dedicated Team",
-    link: "/hire-dedicated-team",
+    link: "/",
     imageUrl: "/images/hero/Dedicated-Team.mp4",
   },
   {
@@ -25,7 +25,7 @@ export  const heroSlider: Slide[] = [
     description:
       "Our Shopify Solutions provide everything you need to effortlessly create and manage a successful online store, helping you reach new heights in eCommerce success.",
     buttonText: "Shopify Services",
-    link: "/shopify-development-services",
+    link: "/",
     imageUrl: "/images/hero/Shopify-development.mp4",
   },
   {
@@ -35,7 +35,7 @@ export  const heroSlider: Slide[] = [
     description:
       "Our Web Application Development Service provides a comprehensive solution for all your web needs, utilizing cutting-edge technology to optimize efficiency, productivity, and success.",
     buttonText: "Web App Services",
-    link: "/web-application-development-services",
+    link: "/",
     imageUrl: "/images/hero/Web-Apps-development.mp4",
   },
   {
@@ -45,7 +45,7 @@ export  const heroSlider: Slide[] = [
     description:
       "Revolutionize your mobile applications with our all-in-one solutions. Streamline your operations with our cutting-edge technology, designed to optimize efficiency and enhance user experience.",
     buttonText: "Mobile App Services",
-    link: "/mobile-app-development-services",
+    link: "/",
     imageUrl: "/images/hero/Mobile-Apps-development.mp4",
   },
 ];

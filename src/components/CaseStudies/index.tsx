@@ -3,7 +3,7 @@ import { caseStudies } from "@/constants/caseStudies";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import LazyVideo from "../Common/Video"
+import LazyVideo from "../Common/Video";
 
 const CaseStudies = () => {
   return (
@@ -22,7 +22,7 @@ const CaseStudies = () => {
         {caseStudies.map((study) => (
           <div
             key={study.id}
-            className="flex items-center justify-start gap-16 rounded-[10px] bg-slate-50 even:flex-row-reverse max-lg:flex-col-reverse max-lg:even:flex-col-reverse lg:pl-[30px] lg:pr-[30.01px] dark:bg-black/50"
+            className="flex items-center justify-start gap-16 rounded-[10px] bg-slate-50 even:flex-row-reverse dark:bg-black/50 max-lg:flex-col-reverse max-lg:even:flex-col-reverse lg:pl-[30px] lg:pr-[30.01px]"
           >
             <div className="flex w-2/3 flex-col items-start justify-start">
               <div className="flex flex-col items-start justify-start gap-[13px] self-stretch pb-[104.36px] pt-[25px]">
@@ -61,8 +61,7 @@ const CaseStudies = () => {
                     </div>
                   </div>
                   <Link
-                    href={"/"}
-                    // href={study.link}
+                    href={study.link}
                     className="mt-3 flex rounded-lg border border-primaryBlue px-4 py-2 text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
                   >
                     View Case Study
@@ -84,7 +83,6 @@ const CaseStudies = () => {
       </div>
       <div className="flex items-center justify-center">
         <Link
-          // href={"/work"}
           href={"/"}
           className="mt-8 flex w-fit rounded border border-primaryBlue px-4 py-2 font-bold text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"
         >

@@ -30,7 +30,7 @@ export const services: Service[] = [
         </defs>
       </svg>
     ),
-    link: "/blockchain-development-services",
+    link: "/",
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ export const services: Service[] = [
         />
       </svg>
     ),
-    link: "/web-application-development-services",
+    link: "/",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ export const services: Service[] = [
         />
       </svg>
     ),
-    link: "/mobile-app-development-services",
+    link: "/",
   },
   {
     id: 4,
@@ -91,7 +91,7 @@ export const services: Service[] = [
         />
       </svg>
     ),
-    link: "/ui-ux-design-services",
+    link: "/",
   },
   {
     id: 5,
@@ -110,7 +110,7 @@ export const services: Service[] = [
         />
       </svg>
     ),
-    link: "/wordpress-development-services",
+    link: "/",
   },
   {
     id: 6,
@@ -142,6 +142,6 @@ export const services: Service[] = [
         />
       </svg>
     ),
-    link: "/mvp-development-services",
+    link: "/",
   },
 ];

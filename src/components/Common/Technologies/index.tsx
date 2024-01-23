@@ -2,6 +2,7 @@
 import { Technologies } from "@/constants/technologies";
 import Image from "next/image";
 import React, { useState } from "react";
+import Tabs from "../Tabs";
 
 const ToolsAndTechnologies = () => {
   const [selectedTab, setSelectedTab] = useState("Web");
@@ -18,7 +19,7 @@ const ToolsAndTechnologies = () => {
   return (
     <section className="container pb-32 pt-16">
       <h1 className="text-center">
-        <span className="font-['DM Sans'] text-xl font-bold leading-[47.60px] text-black lg:text-[40px] dark:text-white">
+        <span className="font-['DM Sans'] text-xl font-bold leading-[47.60px] text-black dark:text-white lg:text-[40px]">
           Our Tools
         </span>
         <span className="font-['DM Sans'] text-xl font-bold leading-[47.60px] text-blue-500 lg:text-[40px]">
@@ -26,21 +27,7 @@ const ToolsAndTechnologies = () => {
           & Technologies
         </span>
       </h1>
-      <div className="mt-32 flex flex-wrap items-center justify-center gap-x-24 gap-y-4">
-        {tabs.map((tab) => (
-          <h2
-            key={tab}
-            className={
-              (selectedTab === tab
-                ? "border-b-2 border-primaryBlue text-primaryBlue dark:!text-primaryBlue"
-                : "") +
-              " font-['DM Sans'] text-xl font-bold leading-9 text-black hover:text-app-orange lg:text-2xl dark:text-white"
-            }
-          >
-            <button onClick={() => setSelectedTab(tab)}>{tab}</button>
-          </h2>
-        ))}
-      </div>
+      <Tabs callBack={setSelectedTab} selectedTab={selectedTab} tabs={tabs} />
       {Technologies.map((techTab) => (
         <div
           key={techTab.id}

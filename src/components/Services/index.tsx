@@ -19,7 +19,7 @@ const Services = () => {
           solutions.
         </div>
       </div>
-      <div className="3xl:grid-cols-4 grid grid-cols-1 gap-x-32 gap-y-4 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-x-32 gap-y-4 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
         {services.map((service) => (
           <div
             key={service.id}
@@ -38,8 +38,7 @@ const Services = () => {
                 {service.title}
               </div>
               <Link
-                href={"/"}
-                // href={service.link}
+                href={service.link}
                 className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-black group-hover:text-white dark:text-white"
               >
                 →
@@ -47,7 +46,7 @@ const Services = () => {
             </div>
           </div>
         ))}
-        <div className="group flex w-full min-w-[340px] shrink bg-primaryBlue grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 hover:bg-app-orange px-[17px] pb-[0.01px] pt-[27px] dark:border-white/10">
+        <div className="group flex w-full min-w-[340px] shrink grow basis-0 flex-col items-start justify-start gap-[30px] self-stretch border-2 border-black border-opacity-10 bg-primaryBlue px-[17px] pb-[0.01px] pt-[27px] hover:bg-app-orange dark:border-white/10">
           <div className="flex w-full flex-col">
             <h2 className="font-['DM Sans'] w-full text-end text-4xl font-normal leading-relaxed text-white">
               08
@@ -58,8 +57,7 @@ const Services = () => {
               Explore
             </div>
             <Link
-              href={"/"}
-              // href={"service.link"}
+              href={"service.link"}
               className="font-['DM Sans'] w-fit text-3xl font-normal leading-relaxed text-white"
             >
               →

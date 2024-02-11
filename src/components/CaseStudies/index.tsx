@@ -10,14 +10,14 @@ const CaseStudies = () => {
   return (
     <section className="container py-[70px]">
       <div className="flex flex-col items-center justify-center pb-[45px] pt-[34px]">
-        <div className="text-center">
+        <h2 id="case-studies" className="text-center">
           <span className="font-['DM Sans'] text-5xl font-bold leading-[76.80px] text-black dark:text-white">
             Case{" "}
           </span>
           <span className="font-['DM Sans'] text-5xl font-bold leading-[76.80px] text-blue-500">
             Studies
           </span>
-        </div>
+        </h2>
       </div>
       <div className="flex flex-col gap-x-32 gap-y-24">
         {caseStudies.map((study) => (
@@ -31,30 +31,24 @@ const CaseStudies = () => {
                   <LazyImage
                     className="relative hidden h-[35px] w-full dark:block"
                     src="/images/logo/logo-white.svg"
-                    alt=""
+                    alt="dark logo for Galaxy Codez Solutions"
                   />
                   <LazyImage
                     className="relative block h-[35px] w-full dark:hidden"
                     src="/images/logo/logo.svg"
-                    alt=""
+                    alt="light logo for Galaxy Codez Solutions"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center pr-[0.75px] max-lg:text-center lg:items-start">
-                  <div className="flex pb-[9.59px]">
-                    <div className="font-['DM Sans'] text-4xl font-bold leading-[57.60px] text-black dark:text-white">
-                      {study.title}
-                    </div>
-                  </div>
-                  <div className="flex pb-[10.39px]">
-                    <div className="font-['DM Sans'] rounded text-lg font-semibold leading-normal text-black dark:text-white">
-                      {study.category}
-                    </div>
-                  </div>
-                  <div className="flex ">
-                    <div className="font-['DM Sans'] text-xl font-normal leading-[30px] text-black dark:text-white">
-                      {study.description}
-                    </div>
-                  </div>
+                  <h2 className="font-['DM Sans'] pb-[9.59px] text-4xl font-bold leading-[57.60px] text-black dark:text-white">
+                    {study.title}
+                  </h2>
+                  <h4 className="font-['DM Sans'] rounded pb-[10.39px] text-lg font-semibold leading-normal text-black dark:text-white">
+                    {study.category}
+                  </h4>
+                  <p className="font-['DM Sans'] text-xl font-normal leading-[30px] text-black dark:text-white">
+                    {study.description}
+                  </p>
                   <Link
                     href={study.link}
                     className="mt-3 flex rounded-lg border border-primaryBlue px-4 py-2 text-primaryBlue hover:border-app-orange hover:bg-app-orange hover:text-white"

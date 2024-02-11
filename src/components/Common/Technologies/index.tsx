@@ -1,8 +1,8 @@
 "use client";
-import { Technologies } from "@/constants/technologies"
-import { useState } from "react"
-import LazyImage from "../Image"
-import Tabs from "../Tabs"
+import { Technologies } from "@/constants/technologies";
+import { useState } from "react";
+import LazyImage from "../Image";
+import Tabs from "../Tabs";
 
 const ToolsAndTechnologies = () => {
   const [selectedTab, setSelectedTab] = useState("Web");
@@ -18,7 +18,7 @@ const ToolsAndTechnologies = () => {
 
   return (
     <section className="container pb-32 pt-16">
-      <h1 className="text-center">
+      <h2 className="text-center">
         <span className="font-['DM Sans'] text-xl font-bold leading-[47.60px] text-black dark:text-white lg:text-[40px]">
           Our Tools
         </span>
@@ -26,7 +26,7 @@ const ToolsAndTechnologies = () => {
           {" "}
           & Technologies
         </span>
-      </h1>
+      </h2>
       <Tabs callBack={setSelectedTab} selectedTab={selectedTab} tabs={tabs} />
       {Technologies.map((techTab) => (
         <div
@@ -47,7 +47,10 @@ const ToolsAndTechnologies = () => {
                   <div className="inline-flex h-[85px] w-[85px] flex-col items-center justify-center">
                     <LazyImage
                       src={tech.img}
-                      alt=""
+                      alt={
+                        tech.title +
+                        " tech stack used by Galaxy Codez Solutions"
+                      }
                       className="relative h-[85px] w-[85px]"
                     />
                   </div>

@@ -19,14 +19,14 @@ const Footer = () => {
             <FaPhoneAlt size={36} />
             <div className="h-full min-h-10 w-0.5 bg-white" />
             <div className="flex flex-col gap-3">
-              <p className="text-xs">
+              <h5 className="text-xs">
                 <span>Have a query?</span>
-              </p>
-              <div className="hover:text-primaryBlue">
+              </h5>
+              <p className="hover:text-primaryBlue">
                 <Link href="tel:+92 (342) 2930560">
                   <span>+92 (342) 2930560</span>
                 </Link>
-              </div>
+              </p>
             </div>
           </div>
           <div className="flex flex-col flex-wrap items-center gap-3">
@@ -77,20 +77,20 @@ const Footer = () => {
             <IoIosMail size={48} />
             <div className="h-full min-h-10 w-0.5 bg-white" />
             <div className="flex flex-col gap-3">
-              <p className="text-xs">
+              <h5 className="text-xs">
                 <span>Email us at</span>
-              </p>
-              <div className="hover:text-primaryBlue">
+              </h5>
+              <p className="hover:text-primaryBlue">
                 <Link href="mailto:afzalimdad9@gmail.com">
                   <span>afzalimdad9@gmail.com</span>
                 </Link>
-              </div>
+              </p>
             </div>
           </div>
         </div>
-        <span className="text-center text-lg text-[#9a9ea6]">
-          © 2024 Galaxy Codez Inc. All Rights Reserved.
-        </span>
+        <p className="text-center text-lg text-[#9a9ea6]">
+          <span>&copy; 2024 Galaxy Codez Inc. All Rights Reserved.</span>
+        </p>
       </div>
     </footer>
   );

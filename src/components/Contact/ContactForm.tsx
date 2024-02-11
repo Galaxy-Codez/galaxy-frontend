@@ -10,6 +10,9 @@ function ContactForm() {
         height={55}
         className="w-full border-b border-black/10 bg-transparent px-2 py-6 outline-none dark:border-white lg:min-w-96"
         size={30}
+        aria-required
+        required
+        aria-invalid="false"
       />
       <input
         type="text"
@@ -18,6 +21,9 @@ function ContactForm() {
         height={55}
         className="w-full border-b border-black/10 bg-transparent px-2 py-6 outline-none dark:border-white lg:min-w-96"
         size={30}
+        aria-required
+        required
+        aria-invalid="false"
       />
       <input
         type="text"
@@ -26,6 +32,9 @@ function ContactForm() {
         height={55}
         className="w-full border-b border-black/10 bg-transparent px-2 py-6 outline-none dark:border-white lg:min-w-96"
         size={30}
+        aria-required
+        required
+        aria-invalid="false"
       />
       <input
         type="text"
@@ -34,11 +43,17 @@ function ContactForm() {
         height={55}
         className="w-full border-b border-black/10 bg-transparent px-2 py-6 outline-none dark:border-white lg:min-w-96"
         size={30}
+        aria-required
+        required
+        aria-invalid="false"
       />
       <textarea
         placeholder="Message"
         name="message"
         cols={4}
+        aria-required
+        required
+        aria-invalid="false"
         className="w-full border-b border-black/10 bg-transparent px-2 py-6 outline-none dark:border-white lg:min-w-96"
       />
       <button className="flex w-fit rounded border border-primaryBlue bg-primaryBlue px-8 py-3 font-bold text-white hover:border-app-orange hover:bg-app-orange hover:bg-transparent hover:text-app-orange">

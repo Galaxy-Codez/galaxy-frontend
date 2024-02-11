@@ -1,3 +1,5 @@
 # Allow all crawlers
 User-agent: *
-Allow: /
+Disallow:
+
+Sitemap: https://galaxy-frontend.vercel.app/sitemap.xml

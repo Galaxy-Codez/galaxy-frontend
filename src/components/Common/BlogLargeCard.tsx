@@ -51,7 +51,7 @@ const BlogLargeCard = ({
           <Link href={slug} className="overflow-hidden rounded">
             <LazyImage
               src={image}
-              alt={CardTitle}
+              alt={CardTitle + " - Galaxy Codez Solutions"}
               watermark
               className="h-[400px] w-full object-contain object-center"
               style={{

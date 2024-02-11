@@ -1,5 +1,5 @@
 "use client";
-import LazyImage from "@/components/Common/Image"
+import LazyImage from "@/components/Common/Image";
 import {
   ReactNode,
   createContext,
@@ -20,7 +20,7 @@ const LoaderContextProvider = ({ children }: { children?: ReactNode }) => {
 
   return (
     <LoaderContext.Provider value={{ loading, setLoading }}>
-      {loading ? (
+      {/* {loading ? (
         <div className="fixed left-0 top-0 z-auto flex h-full min-h-screen w-full items-center justify-center bg-primaryBlue opacity-100">
           <LazyImage
             src="https://factory-help.online/wp-content/uploads/2023/10/Untitle-1.png"
@@ -30,7 +30,8 @@ const LoaderContextProvider = ({ children }: { children?: ReactNode }) => {
         </div>
       ) : (
         children
-      )}
+      )} */}
+      {children}
     </LoaderContext.Provider>
   );
 };

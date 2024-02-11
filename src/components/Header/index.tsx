@@ -53,12 +53,14 @@ const Header = () => {
               <Link href="/" className={`navbar-logo block w-full py-2 `}>
                 <LazyImage
                   src={"/images/logo/logo.svg"}
-                  alt="logo"
+                  alt="light logo for Galaxy Codez"
+                  title="light logo for Galaxy Codez"
                   className="header-logo h-auto w-auto dark:hidden"
                 />
                 <LazyImage
                   src={"/images/logo/logo-white.svg"}
-                  alt="logo"
+                  alt="dark logo for Galaxy Codez"
+                  title="dark logo for Galaxy Codez"
                   className="header-logo hidden h-auto w-auto dark:block"
                 />
               </Link>
@@ -68,7 +70,7 @@ const Header = () => {
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
-                  aria-label="Mobile Menu"
+                  aria-label="Mobile Menu Galaxy Codez"
                   className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
@@ -179,6 +181,18 @@ const Header = () => {
               </div>
               <div className="hidden items-center justify-end pr-16 sm:flex lg:pr-0">
                 <div className="flex items-center gap-4">
+                  <p
+                    className="rounded px-4 py-2 uppercase text-primary transition-all duration-300 ease-in-out hover:text-primary/90"
+                    data-et-multi-view='{"schema":{"content":{"desktop":"<p><a href=\"tel:+92%20(342) 2930-560\">+92%20(342) 2930-560<\/a><\/p>","tablet":"<p><strong><a href=\"tel:+92%20(342) 2930-560\">+92%20(342) 2930-560<\/a><\/strong><\/p>","phone":"<p><a href=\"tel:+92%20(342) 2930-560\" style=\"align-items: center;\"><img src=\"https:\/\/www.ropstam.com\/wp-content\/uploads\/2022\/07\/Group-39562.svg\" \/><\/a><\/p>"}},"slug":"et_pb_text"}'
+                    data-et-multi-view-load-tablet-hidden="true"
+                    data-et-multi-view-load-phone-hidden="true"
+                  >
+                    <strong>
+                      <Link href="tel:+92 (342) 2930-560">
+                        +92 (342) 2930-560
+                      </Link>
+                    </strong>
+                  </p>
                   <Link
                     href="/contact"
                     className="rounded bg-primary px-4 py-2 uppercase text-white transition-all duration-300 ease-in-out hover:bg-primary/90"

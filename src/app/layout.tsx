@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import LoaderContextProvider from "@/Contexts";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: { default: "", template: "%s - Galaxy Codez" },
@@ -99,7 +101,11 @@ export default function RootLayout({
       <head />
 
       <body className="!scroll-smooth">
-        <LayoutProvider>{children}</LayoutProvider>
+        <Analytics />
+
+        <LoaderContextProvider>
+          <LayoutProvider>{children}</LayoutProvider>
+        </LoaderContextProvider>
       </body>
     </html>
   );

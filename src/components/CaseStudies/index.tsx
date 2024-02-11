@@ -1,9 +1,10 @@
 "use client";
 import { caseStudies } from "@/constants/caseStudies";
-import Image from "next/image";
+
 import Link from "next/link";
 import React from "react";
 import LazyVideo from "../Common/Video";
+import LazyImage from "../Common/Image";
 
 const CaseStudies = () => {
   return (
@@ -27,21 +28,15 @@ const CaseStudies = () => {
             <div className="flex w-2/3 flex-col items-start justify-start">
               <div className="flex flex-col items-start justify-start gap-[13px] self-stretch pb-[104.36px] pt-[25px]">
                 <div className="w-fit max-lg:hidden">
-                  <Image
+                  <LazyImage
                     className="relative hidden h-[35px] w-full dark:block"
                     src="/images/logo/logo-white.svg"
                     alt=""
-                    loading="lazy"
-                    width={140}
-                    height={35}
                   />
-                  <Image
+                  <LazyImage
                     className="relative block h-[35px] w-full dark:hidden"
                     src="/images/logo/logo.svg"
-                    loading="lazy"
                     alt=""
-                    width={140}
-                    height={35}
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center pr-[0.75px] max-lg:text-center lg:items-start">

@@ -1,10 +1,9 @@
 "use client";
-import React from "react";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import Image from "next/image";
 import { testimonials } from "@/constants/testimonials";
+import Link from "next/link";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import LazyImage from "../Common/Image";
 
 const Testimonials = () => {
   return (
@@ -25,21 +24,15 @@ const Testimonials = () => {
           Contact Us
         </Link>
       </div>
-      <div className="w-full xl:w-1/2 [&>div]:h-full [&>div]:min-h-96">
+      <div className="w-full testimonial-slide xl:w-1/2 [&>div]:h-full [&>div]:min-h-96">
         <Swiper autoplay loop pagination modules={[Pagination, Autoplay]}>
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
               <div className="relative flex h-full items-center justify-start px-16 py-16 max-lg:flex-col">
-                <Image
-                  decoding="async"
-                  width={489}
-                  height={472}
-                  loading="lazy"
+                <LazyImage
                   src={testimonial.img}
-                  className="h-[600px] w-full object-scale-down max-lg:max-h-[300px] lg:w-[350px]"
+                  className="h-[600px] w-full object-cover max-lg:max-h-[300px] lg:w-[350px]"
                   alt={testimonial.name + " testimonial for galaxy codez"}
-                  data-lazy-src={testimonial.img}
-                  data-ll-status="loaded"
                 />
                 <div className="-right-0 inline-flex w-fit flex-col items-start justify-start rounded-bl-[5px] rounded-tl-[5px] border-l-4 border-blue-500 bg-slate-100 py-12 pl-10 pr-4 dark:bg-black/50 lg:absolute lg:pl-[53px]">
                   <div className="flex flex-col items-start justify-start self-stretch border-l border-blue-500 pl-[41px]">

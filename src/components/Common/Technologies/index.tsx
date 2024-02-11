@@ -1,8 +1,8 @@
 "use client";
-import { Technologies } from "@/constants/technologies";
-import Image from "next/image";
-import React, { useState } from "react";
-import Tabs from "../Tabs";
+import { Technologies } from "@/constants/technologies"
+import { useState } from "react"
+import LazyImage from "../Image"
+import Tabs from "../Tabs"
 
 const ToolsAndTechnologies = () => {
   const [selectedTab, setSelectedTab] = useState("Web");
@@ -45,12 +45,9 @@ const ToolsAndTechnologies = () => {
               <div className="flex h-[92.59px] flex-col items-center justify-start self-stretch pb-[7.59px] pl-[22.29px] pr-[22.30px]">
                 <div className="inline-flex items-start justify-start">
                   <div className="inline-flex h-[85px] w-[85px] flex-col items-center justify-center">
-                    <Image
+                    <LazyImage
                       src={tech.img}
                       alt=""
-                      width={85}
-                      loading="lazy"
-                      height={85}
                       className="relative h-[85px] w-[85px]"
                     />
                   </div>

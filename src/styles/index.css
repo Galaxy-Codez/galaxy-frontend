@@ -37,3 +37,100 @@ body {
 .swiper-pagination-bullet-active {
   @apply !bg-white;
 }
+
+.testimonial-slide
+  .swiper
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply !bg-dark/90 dark:!bg-white/90;
+}
+.testimonial-slide
+  .swiper
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  @apply !bg-dark dark:!bg-white;
+}
+.image-scale-in-out {
+  animation: imageScaleInOut 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation: imageScaleInOut 1.2s infinite
+    cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes imageScaleInOut {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#description p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#description a {
+  color: #007aff;
+}
+
+#description p a img {
+  width: 100%;
+}
+
+#description h1 {
+  font-size: 28px;
+  color: #007aff;
+  font-weight: 700;
+}
+
+#description h2 {
+  font-size: 24px;
+  color: #007aff;
+  font-weight: 700;
+}
+
+.crayons-card {
+  width: fit-content;
+  padding: 32px;
+  background-color: #ffffff80;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: grid;
+  align-self: center;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  gap: 4px;
+  margin: 4rem 0px;
+}
+
+.crayons-card .c-embed__cover {
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-lr;
+}
+
+.crayons-card .c-embed__body div {
+  gap: 1.2rem;
+  margin-top: 10px;
+}

@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import LazyImage from "./Image";
 
 interface BlogSmallCard {
   image: string;
@@ -20,13 +19,10 @@ const BlogSmallCard = ({
       <div className="w-full">
         <div className="flex w-full gap-2">
           <Link href={slug} className="w-[150px] overflow-hidden rounded">
-            <Image
-              loading="lazy"
-              width={200}
-              height={200}
+            <LazyImage
               src={image}
               alt={CardTitle}
-              className="h-auto w-full"
+              className="h-auto min-h-[4rem] w-full object-cover"
             />
           </Link>
           <div className="w-full overflow-hidden">

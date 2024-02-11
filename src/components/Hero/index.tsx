@@ -11,7 +11,7 @@ const Hero = () => {
     clickable: true,
     renderBullet: function (_index: number, className: string) {
       return (
-        '<span class="!cursor-pointer !w-4 !h-2 !rounded ' +
+        '<span class="!cursor-pointer !w-4 !bg-white/90 !h-2 !rounded ' +
         className +
         '">' +
         "</span>"

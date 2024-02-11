@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Tabs from "../Common/Tabs";
 import BlogLargeCard from "../Common/BlogLargeCard";
 import BlogSmallCard from "../Common/BlogSmallCard";
+import { Blog } from "@/types/blogs.interface";
 
 function BlogSections() {
   const [selectedTab, setSelectedTab] = useState("All");
@@ -16,11 +17,20 @@ function BlogSections() {
 
   const fetchBlogs = async () => {
     try {
-      const request = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/blogs/paginated?skip=${skip}`,
+      const blogs: Blog[] = await new Promise<Blog[]>(function (
+        resolve,
+        reject,
+      ) {
+        fetch(process.env.NEXT_PUBLIC_BACKEND_URL + "/blogs")
+          .then((res) => res.json())
+          .then((data) => resolve(data.data))
+          .catch((err) => reject(err));
+      }).catch(() => []);
+      setBlogs((pre) =>
+        [...pre, ...blogs].filter((x) =>
+          [...pre, ...blogs].some((y) => y.slug === x.slug),
+        ),
       );
-      const blogsJson = await request.json();
-      setBlogs((pre) => [...pre, ...blogsJson.data]);
     } catch (e) {}
   };
 
@@ -28,11 +38,6 @@ function BlogSections() {
     fetchBlogs();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [skip]);
-
-  useEffect(() => {
-    fetchBlogs();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <section className="bg-white py-16 dark:bg-black/90 lg:py-32">
@@ -45,14 +50,14 @@ function BlogSections() {
         </p>
         <Tabs tabs={tabs} callBack={setSelectedTab} selectedTab={selectedTab} />
         <div className="relative my-16 flex justify-between gap-10 max-lg:flex-col">
-          <div className="w-full lg:w-3/4">
+          <div className="min-h-screen w-full lg:w-3/4">
             {blogs.map((blog) => (
               <BlogLargeCard
-                CardDescription={blog.description}
-                CardTitle={blog.title}
-                image={blog.social_image}
-                slug="/"
-                key={blog.slug}
+                CardDescription={blog?.description}
+                CardTitle={blog?.title}
+                image={blog?.social_image}
+                slug={`/blogs/${blog?.slug}`}
+                key={blog?.slug}
                 setSkip={setSkip}
                 total={blogs.length}
                 last={blogs.length - 1 === blogs.indexOf(blog)}
@@ -63,7 +68,7 @@ function BlogSections() {
             <div className="sticky top-28">
               <div>
                 <h1 className="text-3xl font-bold">Recent Posts</h1>
-                <div className="mt-3 flex flex-col gap-3">
+                <div className="mt-3 flex min-h-32 flex-col gap-3">
                   {blogs
                     .sort(function (a, b) {
                       return (
@@ -74,18 +79,18 @@ function BlogSections() {
                     .splice(0, 3)
                     .map((blog) => (
                       <BlogSmallCard
-                        CardDescription={blog.description}
-                        CardTitle={blog.title}
-                        image={blog.social_image}
-                        slug="/"
-                        key={blog.id}
+                        CardDescription={blog?.description}
+                        CardTitle={blog?.title}
+                        image={blog?.social_image}
+                        slug={`/blogs/${blog?.slug}`}
+                        key={blog?.id}
                       />
                     ))}
                 </div>
               </div>
               <div className="mt-20">
                 <h1 className="text-3xl font-bold">Popular Posts</h1>
-                <div className="mt-3 flex flex-col gap-3">
+                <div className="mt-3 flex min-h-32 flex-col gap-3">
                   {blogs
                     .sort(function (a, b) {
                       return (
@@ -95,11 +100,11 @@ function BlogSections() {
                     .splice(0, 3)
                     .map((blog) => (
                       <BlogSmallCard
-                        CardDescription={blog.description}
-                        CardTitle={blog.title}
-                        image={blog.social_image}
-                        slug="/"
-                        key={blog.id}
+                        CardDescription={blog?.description}
+                        CardTitle={blog?.title}
+                        image={blog?.social_image}
+                        slug={`/blogs/${blog?.slug}`}
+                        key={blog?.id}
                       />
                     ))}
                 </div>

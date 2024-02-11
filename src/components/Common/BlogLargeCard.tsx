@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
+import LazyImage from "./Image";
 
 interface BlogLargeCard {
   image: string;
@@ -49,12 +49,10 @@ const BlogLargeCard = ({
       <div ref={videoRef} className="w-full px-4">
         <div className="mb-10 w-full">
           <Link href={slug} className="overflow-hidden rounded">
-            <Image
-              loading="lazy"
-              width={1920}
-              height={400}
+            <LazyImage
               src={image}
               alt={CardTitle}
+              watermark
               className="h-[400px] w-full object-contain object-center"
               style={{
                 background: "linear-gradient(to top,#000 0,#2693fa 123%)",

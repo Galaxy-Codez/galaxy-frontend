@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import LazyImage from "../Common/Image";
 
 const HireNewTeam = () => {
   return (
-    <section className="flex flex-col-reverse items-center justify-end gap-x-20 bg-[#f2f5f9] px-16 py-36 lg:flex-row lg:px-0 lg:pl-32 dark:bg-black/40">
+    <section className="flex flex-col-reverse items-center justify-end gap-x-20 bg-[#f2f5f9] px-16 py-36 dark:bg-black/40 lg:flex-row lg:px-0 lg:pl-32">
       <div>
         <span className="font-['DM Sans'] text-[40px] font-bold leading-[64px] text-black dark:text-white">
           Unlock your business potential with &nbsp;
@@ -32,21 +32,10 @@ const HireNewTeam = () => {
           Let&apos;s get started
         </Link>
       </div>
-      <Image
-        fetchPriority="high"
-        decoding="async"
-        width={930}
-        loading="lazy"
-        height={813}
+      <LazyImage
         src="/images/fivetms-mockup.webp"
         alt="five tms AI software developed using android, ios, and web application development services by Galaxy Codez."
-        title=""
-        data-lazy-srcset="/images/fivetms-mockup.webp 930w, /images/fivetms-mockup.webp 300w, /images/fivetms-mockup.webp 768w"
-        data-lazy-sizes="(max-width: 930px) 100vw, 930px"
         className="wp-image-43348 entered lazyloaded"
-        data-lazy-src="/images/fivetms-mockup.webp"
-        data-ll-status="loaded"
-        sizes="(max-width: 930px) 100vw, 930px"
       />
     </section>
   );

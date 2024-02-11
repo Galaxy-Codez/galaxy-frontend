@@ -1,10 +1,11 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "../../constants/menuData";
 import ThemeToggler from "./ThemeToggler";
+import LazyImage from "../Common/Image";
 
 const Header = () => {
   const pathUrl = usePathname();
@@ -50,20 +51,14 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">
               <Link href="/" className={`navbar-logo block w-full py-2 `}>
-                <Image
+                <LazyImage
                   src={"/images/logo/logo.svg"}
-                  loading="lazy"
                   alt="logo"
-                  width={140}
-                  height={30}
                   className="header-logo h-auto w-auto dark:hidden"
                 />
-                <Image
+                <LazyImage
                   src={"/images/logo/logo-white.svg"}
-                  loading="lazy"
                   alt="logo"
-                  width={140}
-                  height={30}
                   className="header-logo hidden h-auto w-auto dark:block"
                 />
               </Link>
@@ -105,7 +100,6 @@ const Header = () => {
                       menuItem.path ? (
                         <li key={index} className="group relative">
                           <Link
-                            scroll={false}
                             href={menuItem.path}
                             className={`ud-menu-scroll flex py-2 text-base font-bold text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
                               pathUrl === menuItem?.path &&

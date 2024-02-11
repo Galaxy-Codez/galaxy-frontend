@@ -123,32 +123,32 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
+  // {
+  //   id: 4,
+  //   title: "Insights",
+  //   url: "/",
+  //   newTab: false,
+  //   submenu: [
   {
     id: 4,
-    title: "Insights",
-    url: "/",
+    title: "Blogs",
+    path: "/blogs",
     newTab: false,
-    submenu: [
-      {
-        id: 1,
-        title: "Blogs",
-        path: "/blogs",
-        newTab: false,
-      },
-      {
-        id: 2,
-        title: "Events",
-        path: "/",
-        newTab: false,
-      },
-      {
-        id: 3,
-        title: "Newsletters",
-        path: "/",
-        newTab: false,
-      },
-    ],
   },
+  //     {
+  //       id: 2,
+  //       title: "Events",
+  //       path: "/",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 3,
+  //       title: "Newsletters",
+  //       path: "/",
+  //       newTab: false,
+  //     },
+  //   ],
+  // },
   {
     id: 5,
     title: "Careers",

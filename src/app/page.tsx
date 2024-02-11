@@ -36,7 +36,8 @@ export const metadata: Metadata = {
     creatorId: "https://twitter.com/galaxycodez",
     description:
       "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez Solutions.",
-    title: "Web, Mobile & Software Development Company - Galaxy Codez Solutions",
+    title:
+      "Web, Mobile & Software Development Company - Galaxy Codez Solutions",
     site: "@galaxycodez",
     siteId: "https://twitter.com/galaxycodez",
     images: [
@@ -70,6 +71,13 @@ export const metadata: Metadata = {
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   verification: {
     google: "iCcQGtrgsy6kJxm8bnGXXWPwB9rceih2M27pWa21J2E",
+  },
+  referrer: "no-referrer",
+  publisher: "Galaxy Codez Solutions",
+  icons: {
+    shortcut: "https://galaxy-frontend.vercel.app/favicon.ico",
+    apple: "https://galaxy-frontend.vercel.app/favicon.ico",
+    icon: "https://galaxy-frontend.vercel.app/favicon.ico",
   },
 };
 

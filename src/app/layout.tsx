@@ -70,6 +70,13 @@ export const metadata: Metadata = {
   verification: {
     google: "iCcQGtrgsy6kJxm8bnGXXWPwB9rceih2M27pWa21J2E",
   },
+  referrer: "no-referrer",
+  publisher: "Galaxy Codez Solutions",
+  icons: {
+    shortcut: "https://galaxy-frontend.vercel.app/favicon.ico",
+    apple: "https://galaxy-frontend.vercel.app/favicon.ico",
+    icon: "https://galaxy-frontend.vercel.app/favicon.ico",
+  },
 };
 
 export const viewport: Viewport = {
@@ -96,7 +103,12 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon image_src" href="favicon.ico" />
+        <link rel="apple-touch-icon-image image_src" href="favicon.ico" />
+        <link rel="apple-touch-icon-precomposed image_src" href="favicon.ico" />
+      </head>
 
       <body className="!scroll-smooth">
         <LoaderContextProvider>

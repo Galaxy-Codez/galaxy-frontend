@@ -36,13 +36,13 @@ const HeroSection = ({
         ref.current.innerHTML = startHtml + html;
       }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref.current]);
 
   return (
     <div ref={ref}>
       <section
-        className={`h-full min-h-screen bg-black bg-no-repeat bg-cover py-20 lg:py-[110px]`}
+        className={`h-full min-h-screen bg-black bg-cover bg-no-repeat py-20 lg:py-[110px]`}
         style={{ backgroundImage }}
       >
         <div className="container flex h-full items-center justify-between gap-x-64 gap-y-16 px-4 max-lg:flex-col lg:px-32">
@@ -50,12 +50,16 @@ const HeroSection = ({
             <h1 className="font-['Inter'] text-3xl font-bold text-white lg:text-6xl ">
               {title}
             </h1>
-            <h2 className="mt-4 font-['Inter'] text-3xl font-bold text-white lg:text-6xl ">
-              {subHeading}
-            </h2>
-            <p className="mb-10 mt-4 font-['Inter'] text-base font-medium text-white max-lg:text-center lg:max-w-[60vw] lg:text-xl">
-              {description}
-            </p>
+            {subHeading && (
+              <h2 className="mt-4 font-['Inter'] text-3xl font-bold text-white lg:text-6xl ">
+                {subHeading}
+              </h2>
+            )}
+            {description && (
+              <p className="mb-10 mt-4 font-['Inter'] text-base font-medium text-white max-lg:text-center lg:max-w-[60vw] lg:text-xl">
+                {description}
+              </p>
+            )}
             {leftChildrens}
             {getStartedLink && (
               <Link

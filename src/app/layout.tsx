@@ -7,8 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import LoaderContextProvider from "@/Contexts";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: { default: "", template: "%s - Galaxy Codez" },
   metadataBase: new URL(process.env.FRONTEND_URL),
@@ -101,8 +99,6 @@ export default function RootLayout({
       <head />
 
       <body className="!scroll-smooth">
-        <Analytics />
-        <SpeedInsights/>
         <LoaderContextProvider>
           <LayoutProvider>{children}</LayoutProvider>
         </LoaderContextProvider>

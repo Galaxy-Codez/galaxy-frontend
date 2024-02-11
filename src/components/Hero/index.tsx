@@ -40,14 +40,21 @@ const Hero = () => {
         autoplay
         className="h-full min-h-[90vh] w-full"
       >
-        {heroSlider.map((slider) => (
+        {heroSlider.map((slider, idx) => (
           <SwiperSlide key={slider.id} className="relative h-auto w-full">
             <div className="container flex h-full min-h-[92vh] items-center justify-between gap-24 py-32">
               <div className="w-full max-lg:text-center xl:w-1/2">
                 <Link href={slider.link} className="w-fit">
-                  <h1 className="text-2xl font-bold text-white lg:text-4xl">
-                    {slider.title}
-                  </h1>
+                  {idx === 0 && (
+                    <h1 className="text-2xl font-bold text-white lg:text-4xl">
+                      {slider.title}
+                    </h1>
+                  )}
+                  {idx !== 0 && (
+                    <h2 className="text-2xl font-bold text-white lg:text-4xl">
+                      {slider.title}
+                    </h2>
+                  )}
                 </Link>
                 <p className="my-8 text-base text-white lg:my-6">
                   {slider.description}

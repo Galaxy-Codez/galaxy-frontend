@@ -6,7 +6,7 @@ export const testimonials: Testimonial[] = [
     name: "Tariehk",
     title: "CEO",
     org: "RealAdvice Agency",
-    desc: "“They met expectations with every aspect of design and development of the product, and we’ve seen an increase in downloads and monthly users.”",
+    desc: "“Willing to accommodate nonprofit budgets, Ropstam brought their robust experience to the project. They checked in consistently, and were communicative, easy to reach, and responsive.”",
     img: "/images/testimonials/tariehk.webp",
   },
   {

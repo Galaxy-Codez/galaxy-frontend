@@ -43,9 +43,9 @@ const CaseStudies = () => {
                   <h2 className="font-['DM Sans'] pb-[9.59px] text-4xl font-bold leading-[57.60px] text-black dark:text-white">
                     {study.title}
                   </h2>
-                  <h4 className="font-['DM Sans'] rounded pb-[10.39px] text-lg font-semibold leading-normal text-black dark:text-white">
+                  <h3 className="font-['DM Sans'] rounded pb-[10.39px] text-lg font-semibold leading-normal text-black dark:text-white">
                     {study.category}
-                  </h4>
+                  </h3>
                   <p className="font-['DM Sans'] text-xl font-normal leading-[30px] text-black dark:text-white">
                     {study.description}
                   </p>

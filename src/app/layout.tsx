@@ -8,24 +8,24 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import LoaderContextProvider from "@/Contexts";
 export const metadata: Metadata = {
-  title: { default: "", template: "%s - Galaxy Codez" },
+  title: { default: "", template: "%s - Galaxy Codez Solutions" },
   metadataBase: new URL(process.env.FRONTEND_URL),
   alternates: {
     canonical: process.env.FRONTEND_URL,
   },
   description:
-    "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez.",
+    "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez Solutions.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: process.env.FRONTEND_URL,
-    siteName: "Galaxy Codez",
+    siteName: "Galaxy Codez Solutions",
     images: [
       {
         url: process.env.FRONTEND_URL + "/opengraph-images/home.png",
         width: 1200,
         height: 630,
-        alt: "Galaxy Codez",
+        alt: "Galaxy Codez Solutions",
       },
     ],
   },
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     creator: "@galaxycodez",
     creatorId: "https://twitter.com/galaxycodez",
     description:
-      "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez.",
-    title: { default: "", template: "%s - Galaxy Codez" },
+      "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez Solutions.",
+    title: { default: "", template: "%s - Galaxy Codez Solutions" },
     site: "@galaxycodez",
     siteId: "https://twitter.com/galaxycodez",
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: process.env.FRONTEND_URL + "/opengraph-images/home.png",
         width: 1200,
         height: 630,
-        alt: "Galaxy Codez",
+        alt: "Galaxy Codez Solutions",
         type: "image/jpeg",
         host: "galaxycodez.com",
         hostname: "galaxycodez.com",
@@ -55,14 +55,14 @@ export const metadata: Metadata = {
       },
     ],
   },
-  applicationName: "Galaxy Codez",
+  applicationName: "Galaxy Codez Solutions",
   authors: {
-    name: "Galaxy Codez",
+    name: "Galaxy Codez Solutions",
     url: process.env.FRONTEND_URL,
   },
   category: "Software Development",
-  creator: "Galaxy Codez",
-  generator: "Galaxy Codez",
+  creator: "Galaxy Codez Solutions",
+  generator: "Galaxy Codez Solutions",
   keywords:
     "Solutions,Galaxy Codez,Software Solutions,Solutions Web,Galaxy,Codez,Development,Web,software,Web Development,Software Development,Mobile,Business,App Development,Mobile App Development,Web App,Solutions Inc,Shopify Solutions,Web Application Development,Chain Solutions,Web Apps,Mobile App,Blockchain Solutions,Expert Outsourcing Solutions,Mobile Apps,Business Potential",
   robots:

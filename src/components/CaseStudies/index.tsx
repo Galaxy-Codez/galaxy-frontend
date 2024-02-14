@@ -31,12 +31,12 @@ const CaseStudies = () => {
                   <LazyImage
                     className="relative hidden h-[35px] w-full dark:block"
                     src="/images/logo/logo-white.svg"
-                    alt="dark logo for Galaxy Codez Solutions"
+                    alt="dark logo for Galaxy Codez"
                   />
                   <LazyImage
                     className="relative block h-[35px] w-full dark:hidden"
                     src="/images/logo/logo.svg"
-                    alt="light logo for Galaxy Codez Solutions"
+                    alt="light logo for Galaxy Codez"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center pr-[0.75px] max-lg:text-center lg:items-start">

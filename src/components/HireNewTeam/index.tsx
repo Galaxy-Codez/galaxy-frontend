@@ -36,8 +36,8 @@ const HireNewTeam = () => {
       </div>
       <LazyImage
         src="/images/fivetms-mockup.webp"
-        alt="five tms AI software developed using android, ios, and web application development services by Galaxy Codez Solutions."
-        title="five tms AI software developed using android, ios, and web application development services by Galaxy Codez Solutions."
+        alt="five tms AI software developed using android, ios, and web application development services by Galaxy Codez."
+        title="five tms AI software developed using android, ios, and web application development services by Galaxy Codez."
       />
     </section>
   );

@@ -25,7 +25,7 @@ const ErrorPage = () => {
               <div className="relative mx-auto aspect-[129/138] max-w-[357px] text-center">
                 <LazyImage
                   src="/images/404.svg"
-                  alt="404 not found image - Galaxy Codez Solutions"
+                  alt="404 not found image - Galaxy Codez"
                   className="mx-auto max-w-full"
                 />
               </div>

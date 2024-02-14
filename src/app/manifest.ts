@@ -2,9 +2,10 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Galaxy Codez Solutions",
-    short_name: "Galaxy Codez Solutions",
-    description: "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez Solutions.",
+    name: "Galaxy Codez",
+    short_name: "Galaxy Codez",
+    description:
+      "Empower your business growth with world-class software, mobile apps and website development with Galaxy Codez.",
     start_url: "/",
     display: "standalone",
     background_color: "#fff",

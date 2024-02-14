@@ -47,10 +47,7 @@ const ToolsAndTechnologies = () => {
                   <div className="inline-flex h-[85px] w-[85px] flex-col items-center justify-center">
                     <LazyImage
                       src={tech.img}
-                      alt={
-                        tech.title +
-                        " tech stack used by Galaxy Codez Solutions"
-                      }
+                      alt={tech.title + " tech stack used by Galaxy Codez"}
                       className="relative h-[85px] w-[85px]"
                     />
                   </div>

@@ -3,14 +3,8 @@ import LazyImage from "@/components/Common/Image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "404 Page",
-  description: `Uh-oh! It seems like you've encountered a digital anomaly – the page you're searching for appears to be lost in the vast reaches of cyberspace. Not to worry, though! Our cosmic development team is actively working on resolving this issue.
-
-While we navigate through the stars to recover the missing page, why not explore other celestial corners of our site? Return to the homepage or use the search feature to discover a constellation of relevant information.
-
-Should you believe this is a technical hiccup, kindly inform us so we can dispatch our tech wizards for immediate assistance.
-
-Thank you for your understanding, and may your digital journey be smooth and filled with stellar discoveries!`,
+  title: "Lost in the Galaxy",
+  description: `Oops! It seems the page is lost. Our team is on it. Explore our site or let us know if it's a glitch. Thanks for your understanding!`,
 };
 
 const ErrorPage = () => {
@@ -25,7 +19,7 @@ const ErrorPage = () => {
               <div className="relative mx-auto aspect-[129/138] max-w-[357px] text-center">
                 <LazyImage
                   src="/images/404.svg"
-                  alt="404 not found image - Galaxy Codez Solutions"
+                  alt="404 not found image - Galaxy Codez"
                   className="mx-auto max-w-full"
                 />
               </div>

@@ -32,7 +32,7 @@ const Testimonials = () => {
                 <LazyImage
                   src={testimonial.img}
                   className="h-[600px] w-full object-cover max-lg:max-h-[300px] lg:w-[350px]"
-                  alt={testimonial.name + " testimonial for Galaxy Codez Solutions"}
+                  alt={testimonial.name + " testimonial for Galaxy Codez"}
                 />
                 <div className="-right-0 inline-flex w-fit flex-col items-start justify-start rounded-bl-[5px] rounded-tl-[5px] border-l-4 border-blue-500 bg-slate-100 py-12 pl-10 pr-4 dark:bg-black/50 lg:absolute lg:pl-[53px]">
                   <div className="flex flex-col items-start justify-start self-stretch border-l border-blue-500 pl-[41px]">

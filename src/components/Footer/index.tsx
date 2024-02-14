@@ -89,9 +89,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center text-lg text-[#9a9ea6]">
-          <span>
-            &copy; 2024 Galaxy Codez Solutions Inc. All Rights Reserved.
-          </span>
+          <span>&copy; 2024 Galaxy Codez Inc. All Rights Reserved.</span>
         </p>
       </div>
     </footer>

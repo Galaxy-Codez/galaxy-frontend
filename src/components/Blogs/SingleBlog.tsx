@@ -139,7 +139,7 @@ const SingleBlog = ({ blog }) => {
             <LazyImage
               src={blog?.user?.profile_image}
               className="h-auto w-full object-cover lg:w-[350px]"
-              alt={blog?.user?.name + ' user of Galaxy Codez Solutions'}
+              alt={blog?.user?.name + " user of Galaxy Codez"}
             />
             <div className="inline-flex h-full w-fit flex-col items-start justify-start rounded-bl-[5px] rounded-tl-[5px] border-l-4 border-blue-500 bg-slate-100 py-12 pl-10 pr-4 dark:bg-black/50 lg:pl-[53px]">
               <div className="flex flex-col items-start justify-start self-stretch border-l border-blue-500 pl-[41px]">

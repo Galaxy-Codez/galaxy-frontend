@@ -21,7 +21,7 @@ const BlogSmallCard = ({
           <Link href={slug} className="w-[150px] overflow-hidden rounded">
             <LazyImage
               src={image}
-              alt={CardTitle + "- Galaxy Codez Solutions"}
+              alt={CardTitle + "- Galaxy Codez"}
               className="h-auto min-h-[4rem] w-full object-cover"
             />
           </Link>

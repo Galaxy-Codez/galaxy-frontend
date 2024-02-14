@@ -53,14 +53,14 @@ const Header = () => {
               <Link href="/" className={`navbar-logo block w-full py-2 `}>
                 <LazyImage
                   src={"/images/logo/logo.svg"}
-                  alt="light logo for Galaxy Codez Solutions"
-                  title="light logo for Galaxy Codez Solutions"
+                  alt="light logo for Galaxy Codez"
+                  title="light logo for Galaxy Codez"
                   className="header-logo h-auto w-auto dark:hidden"
                 />
                 <LazyImage
                   src={"/images/logo/logo-white.svg"}
-                  alt="dark logo for Galaxy Codez Solutions"
-                  title="dark logo for Galaxy Codez Solutions"
+                  alt="dark logo for Galaxy Codez"
+                  title="dark logo for Galaxy Codez"
                   className="header-logo hidden h-auto w-auto dark:block"
                 />
               </Link>
@@ -70,7 +70,7 @@ const Header = () => {
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
-                  aria-label="Mobile Menu Galaxy Codez Solutions"
+                  aria-label="Mobile Menu Galaxy Codez"
                   className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span

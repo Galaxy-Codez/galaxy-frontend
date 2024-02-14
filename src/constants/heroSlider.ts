@@ -48,4 +48,22 @@ export const heroSlider: Slide[] = [
     link: "/",
     imageUrl: "/images/hero/Mobile-Apps-development.mp4",
   },
+  {
+    id: 5,
+    title: "Web, Mobile & Software Development Company",
+    description:
+      "Supercharge your business growth with Galaxy Codez's premier software, mobile apps, and website development solutions.",
+    buttonText: "Recommended Services",
+    link: "/",
+    imageUrl: "/images/hero/Mobile-Apps-development.mp4",
+  },
+  {
+    id: 5,
+    title: "Empower Your Business: Secure, Decentralized Blockchain Solutions",
+    description:
+      "Are you ready to take your business to the next level with secure and decentralized solutions? Look no further than our blockchain development expertise. Discover how we can empower your operations and revolutionize your business with cutting-edge technology.",
+    buttonText: "Blockchain Services",
+    link: "/",
+    imageUrl: "/images/hero/blockchain-development.mp4",
+  },
 ];
